@@ -1,0 +1,20 @@
+{
+  "name": "undangan-pernikahan",
+  "version": "1.0.0",
+  "description": "Undangan Pernikahan Digital Raka & Nadya - dengan Buka Undangan (website statis single-file)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js",
+    "preview": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "undangan",
+    "pernikahan",
+    "wedding-invitation",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "private": true
+}
