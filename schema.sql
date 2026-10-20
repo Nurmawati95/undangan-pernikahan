@@ -75,7 +75,13 @@ values
   ('Melati Maharani', 'Berhalangan', '1 Orang', 'Selamat Nadya cantik & Mas Raka! Mohon maaf sekali belum bisa hadir langsung ke Makassar, doa terbaik dipanjatkan dari Jakarta!');
 
 -- 6b. Aktifkan Realtime agar feed update otomatis di semua tamu
-alter publication supabase_realtime add table public.rsvp_wishes;
+-- (idempoten: aman dijalankan ulang meski tabel sudah anggota publication)
+do $$
+begin
+  alter publication supabase_realtime add table public.rsvp_wishes;
+exception when duplicate_object then
+  -- sudah anggota publication, abaikan
+end $$;
 
 -- 7. Verifikasi
 select * from public.rsvp_summary;
