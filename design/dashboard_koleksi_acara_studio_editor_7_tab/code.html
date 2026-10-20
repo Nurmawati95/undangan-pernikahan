@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","primary-fixed":"#ffd9e3","secondary":"#016972","primary-fixed-dim":"#ffb0cb","tertiary-fixed-dim":"#e9c349","surface-container-high":"#f2e6e0","on-tertiary-container":"#4e3d00","on-secondary-container":"#116f78","secondary-fixed-dim":"#85d3dd","inverse-surface":"#362f2c","on-primary":"#ffffff","surface-container-low":"#fef1eb","surface-container-lowest":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#a1effa","error":"#ba1a1a","on-tertiary-fixed-variant":"#574500","inverse-on-surface":"#fbeee9","on-background":"#201a17","surface-tint":"#b80069","on-primary-container":"#fffbff","on-secondary-fixed-variant":"#004f56","on-primary-fixed-variant":"#8d004f","on-error":"#ffffff","on-surface-variant":"#594048","on-tertiary-fixed":"#241a00","tertiary-container":"#cca72f","outline-variant":"#e1bdc7","surface":"#fff8f6","surface-variant":"#ede0db","secondary-container":"#a1effa","surface-container-highest":"#ede0db","tertiary":"#735c00","surface-bright":"#fff8f6","surface-dim":"#e4d7d2","surface-container":"#f8ebe6","primary-container":"#dc1b81","primary":"#b40066","background":"#fff8f6","error-container":"#ffdad6","on-secondary-fixed":"#001f23","tertiary-fixed":"#ffe088","outline":"#8d6f78","on-surface":"#201a17","on-tertiary":"#ffffff","inverse-primary":"#ffb0cb","on-primary-fixed":"#3e0020"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-desktop":"1.5rem","space-md":"1rem","margin-desktop":"3rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-tablet":"2rem",margin:"1.25rem","space-sm":"0.5rem",gutter:"1rem","space-xs":"0.25rem"},fontFamily:{"body-sm":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"label-gold":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"headline-lg":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"script-accent":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"display-hero-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-lg":["Plus Jakarta Sans"]},fontSize:{"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"600"}],"label-gold":["11px",{lineHeight:"16px",letterSpacing:"0.18em",fontWeight:"700"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"52px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"display-hero":["56px",{lineHeight:"68px",letterSpacing:"-0.02em",fontWeight:"400"}],"script-accent":["24px",{lineHeight:"32px",letterSpacing:"0.04em",fontWeight:"400"}],"title-md":["18px",{lineHeight:"26px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero-mobile":["38px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"38px",letterSpacing:"0em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg px-gutter-desktop"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shadow-[0_8px_24px_-4px_rgba(1,105,114,0.3)]"><span class="material-symbols-outlined text-on-secondary text-[22px]">auto_stories</span></div><div><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight block">Mahligai</span><span class="font-label-gold text-label-gold text-tertiary uppercase tracking-wider block">Nusantara Studio</span></div></div><div class="h-[1px] w-full bg-surface-container-high"></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><span class="font-label-gold text-label-gold text-on-surface-variant uppercase px-space-xs mb-space-xs">Navigasi Studio</span><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Ringkasan Studio</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="manajemen-acara" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="font-body-md text-body-md">Manajemen Acara</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="editor-undangan" href="#"><span class="material-symbols-outlined text-[20px]">draw</span><span class="font-body-md text-body-md">Editor Undangan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="katalog-tema" href="#"><span class="material-symbols-outlined text-[20px]">style</span><span class="font-body-md text-body-md">Katalog Tema Adat</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="buku-tamu-rsvp" href="#"><span class="material-symbols-outlined text-[20px]">how_to_reg</span><span class="font-body-md text-body-md">Buku Tamu &amp; RSVP</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="amplop-digital" href="#"><span class="material-symbols-outlined text-[20px]">featured_seasonal_and_gifts</span><span class="font-body-md text-body-md">Amplop Digital &amp; Angpao</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="siaran-langsung" href="#"><span class="material-symbols-outlined text-[20px]">podcasts</span><span class="font-body-md text-body-md">Integrasi Live Streaming</span></a></nav></div><div class="flex flex-col gap-space-sm pt-space-md border-t border-surface-container-high"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan-sistem" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Pengaturan Studio</span></a><div class="flex items-center gap-space-sm px-space-xs py-space-xs rounded-xl bg-surface-container-low p-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">R. Daniswara</span><span class="font-label-gold text-label-gold text-secondary uppercase truncate">Super Admin</span></div><button class="text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant bg-surface-container-low px-space-md py-space-xs rounded-full w-72"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm text-on-surface-variant">Cari mempelai, kode undangan...</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-gold text-label-gold text-on-secondary-container uppercase tracking-wider">Nusantara Cloud Active</span></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></button><div class="h-6 w-[1px] bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="font-body-sm text-body-sm font-medium text-on-surface hidden lg:inline">Super Admin Studio</span></div></div></header><main class="relative pt-16 bg-surface w-full px-gutter-desktop"><div class="flex flex-col w-full pb-16">
+<!-- ========================================== -->
+<!-- 1. DASHBOARD HEADER & QUICK STATS          -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-6 mb-10">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3">
+<span class="font-label-gold text-label-gold text-tertiary uppercase tracking-widest bg-tertiary-fixed/30 px-3 py-1 rounded-full border border-tertiary/20">
+            Akses: Super Admin
+          </span>
+<span class="flex items-center gap-1.5 text-xs text-secondary font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+            MySQL &amp; CDN Storage Sinkron
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Dashboard Pengelola Acara &amp; Studio Undangan
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pusat kendali kurasi estetika mahligai pernikahan adat Nusantara, konfigurasi domain mempelai, dan otomasi RSVP.
+        </p>
+</div>
+<!-- Action Button -->
+<div class="flex items-center gap-3">
+<button class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-title-md text-body-md shadow-[0_8px_24px_-4px_rgba(180,0,102,0.35)] transition-all transform hover:-translate-y-0.5 active:translate-y-0" onclick="openModal('create-modal')">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Buat Acara Baru</span>
+</button>
+</div>
+</div>
+<!-- Quick Stats Bento Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-outline-variant/40 flex items-center justify-between">
+<div>
+<span class="font-label-gold text-label-gold text-on-surface-variant block uppercase">Total Acara</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">12</span>
+<span class="text-xs text-secondary font-medium">Archipelago Registry</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">temple_hindu</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-outline-variant/40 flex items-center justify-between">
+<div>
+<span class="font-label-gold text-label-gold text-on-surface-variant block uppercase">Acara Published</span>
+<span class="font-headline-md text-headline-md text-secondary font-semibold">9</span>
+<span class="text-xs text-secondary-fixed-dim/90 font-medium">Aktif Mengudara</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">public</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-outline-variant/40 flex items-center justify-between">
+<div>
+<span class="font-label-gold text-label-gold text-on-surface-variant block uppercase">Draft Acara</span>
+<span class="font-headline-md text-headline-md text-tertiary font-semibold">3</span>
+<span class="text-xs text-on-surface-variant">Kurasi Studio</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">edit_note</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] border border-outline-variant/40 flex items-center justify-between">
+<div>
+<span class="font-label-gold text-label-gold text-on-surface-variant block uppercase">Total Tamu RSVP</span>
+<span class="font-headline-md text-headline-md text-primary font-semibold">2,480</span>
+<span class="text-xs text-primary font-medium">94% Tingkat Konfirmasi</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">how_to_reg</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. KOLEKSI ACARA (EVENT CARDS GRID)        -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-5 mb-12">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[22px]">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Koleksi Perhelatan Terdaftar</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menampilkan 3 Acara Unggulan</span>
+</div>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Raka & Nadya (Published & Selected in Editor) -->
+<div class="group relative bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_12px_36px_-8px_rgba(31,25,22,0.08)] border-2 border-primary/40 flex flex-col transition-all duration-300 hover:shadow-[0_18px_42px_-6px_rgba(180,0,102,0.18)]">
+<!-- Floating Active Badge -->
+<div class="absolute top-4 left-4 z-20 flex items-center gap-2">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1 shadow-sm" id="badge-raka">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Published
+          </span>
+<span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-primary text-on-primary uppercase tracking-wider shadow">
+            Sedang Diedit
+          </span>
+</div>
+<div class="relative w-full h-72 overflow-hidden bg-surface-variant">
+<img alt="Raka &amp; Nadya" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WSd-ufJV5ICGP5G-QGrLuHci2qE9--hUMX1nCFvzKJluq6m_oN84lJZB8j0Is1m8AqixK8WnY7aha9894fqxEHy-10GL2ss5a2L0gqifHlUXKstwcn0o9JOo6fCPKb4FcnPndwr7QUsMI29LJsyxxU7TK6mTtNO2fpzVnVUbpUwxm3VsVMgNaqxCZpnqBjCZvsuScwIPA6OQYXaV4EPrkCfQa7moqqyScGqLF6ZLJ-aNGNfHr7hz8Z7lwf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-label-gold text-label-gold text-amber-200 uppercase tracking-widest block mb-0.5">Adat Sunda &amp; Minang Kemilau</span>
+<h3 class="font-headline-md text-headline-md font-bold leading-tight">Raka &amp; Nadya</h3>
+<p class="font-body-sm text-body-sm text-white/80">Sabtu, 24 Oktober 2026 • The Glasshouse, Jakarta</p>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="grid grid-cols-2 gap-3 py-2 bg-surface-container-low rounded-xl px-4">
+<div>
+<span class="font-label-gold text-[10px] text-on-surface-variant uppercase block">Konfirmasi Tamu</span>
+<span class="font-title-md text-body-md font-bold text-on-surface">640 / 700 Tamu</span>
+</div>
+<div>
+<span class="font-label-gold text-[10px] text-on-surface-variant uppercase block">Amplop Digital</span>
+<span class="font-title-md text-body-md font-bold text-secondary">Rp 48.250.000</span>
+</div>
+</div>
+<!-- 4 Quick Actions -->
+<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/30">
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-tertiary text-on-tertiary font-medium text-xs hover:bg-tertiary-container hover:text-on-tertiary-container transition-all" onclick="scrollToEditor('raka-nadya')">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Form</span>
+</button>
+<a class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-high text-on-surface font-medium text-xs hover:bg-surface-variant transition-all" href="#undangan-preview" target="_blank">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Lihat ↗</span>
+</a>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<!-- Publikasikan Toggle -->
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="sr-only peer" onchange="togglePublish(this, 'badge-raka')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary relative"></div>
+<span class="text-xs font-medium text-on-surface-variant">Live Acara</span>
+</label>
+<!-- Super Admin Delete -->
+<button class="text-xs font-semibold text-error hover:text-error-container flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:bg-error-container/20 transition-all" onclick="openDeleteModal('Raka &amp; Nadya')">
+<span class="material-symbols-outlined text-[15px]">delete</span>
+<span>Hapus</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Dimas & Sarah (Published) -->
+<div class="group relative bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_12px_36px_-8px_rgba(31,25,22,0.08)] border border-outline-variant/30 flex flex-col transition-all duration-300 hover:shadow-[0_18px_42px_-6px_rgba(1,105,114,0.14)]">
+<div class="absolute top-4 left-4 z-20 flex items-center gap-2">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1 shadow-sm" id="badge-dimas">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Published
+          </span>
+</div>
+<div class="relative w-full h-72 overflow-hidden bg-surface-variant">
+<img alt="Dimas &amp; Sarah" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VsV0yxXeL1X0-yKmc2YChzsDgu7VoZrQ8-ni6Q0yWEeG-ctBOPfzJxnA7U0iZwd29YisyQlhkKOkEcROzASetWhOm7W8CFqoKpYZ8U2RaN_hrJEFE9ivJ1B_9Pco6sGTYCUK7TI-kXl2xaI9kWSa2B7-FEFFwDJdF0D6M3d-iw8cnRWz_NcoiXbGqV0wtZGZ2X0pErcagxgWGE-8hXJcxiI9doClz_b5I0D7yd4uC8oWYp--YxNYyu5bo3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-label-gold text-label-gold text-amber-200 uppercase tracking-widest block mb-0.5">Adat Jawa Solo Basahan</span>
+<h3 class="font-headline-md text-headline-md font-bold leading-tight">Dimas &amp; Sarah</h3>
+<p class="font-body-sm text-body-sm text-white/80">Minggu, 15 November 2026 • Royal Ambarrukmo</p>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="grid grid-cols-2 gap-3 py-2 bg-surface-container-low rounded-xl px-4">
+<div>
+<span class="font-label-gold text-[10px] text-on-surface-variant uppercase block">Konfirmasi Tamu</span>
+<span class="font-title-md text-body-md font-bold text-on-surface">512 / 600 Tamu</span>
+</div>
+<div>
+<span class="font-label-gold text-[10px] text-on-surface-variant uppercase block">Amplop Digital</span>
+<span class="font-title-md text-body-md font-bold text-secondary">Rp 32.100.000</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/30">
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-tertiary text-on-tertiary font-medium text-xs hover:bg-tertiary-container hover:text-on-tertiary-container transition-all" onclick="scrollToEditor('dimas-sarah')">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Form</span>
+</button>
+<a class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-high text-on-surface font-medium text-xs hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Lihat ↗</span>
+</a>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="sr-only peer" onchange="togglePublish(this, 'badge-dimas')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary relative"></div>
+<span class="text-xs font-medium text-on-surface-variant">Live Acara</span>
+</label>
+<button class="text-xs font-semibold text-error hover:text-error-container flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:bg-error-container/20 transition-all" onclick="openDeleteModal('Dimas &amp; Sarah')">
+<span class="material-symbols-outlined text-[15px]">delete</span>
+<span>Hapus</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Faris & Anisa (Draft) -->
+<div class="group relative bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0_12px_36px_-8px_rgba(31,25,22,0.08)] border border-outline-variant/30 flex flex-col transition-all duration-300 hover:shadow-[0_18px_42px_-6px_rgba(0,0,0,0.12)]">
+<div class="absolute top-4 left-4 z-20 flex items-center gap-2">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-300 flex items-center gap-1 shadow-sm" id="badge-faris">
+<span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+            Draft
+          </span>
+</div>
+<div class="relative w-full h-72 overflow-hidden bg-surface-variant">
+<img alt="Faris &amp; Anisa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VOYDEFAESNJ2nUcR_8w5M-_YmDBOBGAzQXFcfXBXqRGCBbeypT5b0s2JyZ4Og7YO4AKBXVjb2SP4SSJZ63GWMdkA7DfWydjV2UF-fztaAuKpw1Uqn7YrTG6CeI95FDMdz4n9Eadwd_-K1VdIJ1khww1nWsJgQIFZJKNTy2Nlko-qTwq9UwI0zknbGfu27_QkjcNzAOUdlOSnPM3M9FwiwWspsw0JVZ9I5nbm7PZoks6j842uy5scY9H5An"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-label-gold text-label-gold text-amber-200 uppercase tracking-widest block mb-0.5">Adat Melayu Deli Modern</span>
+<h3 class="font-headline-md text-headline-md font-bold leading-tight">Faris &amp; Anisa</h3>
+<p class="font-body-sm text-body-sm text-white/80">Sabtu, 12 Desember 2026 • Grand Ballroom Medan</p>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="grid grid-cols-2 gap-3 py-2 bg-surface-container-low rounded-xl px-4">
+<div>
+<span class="font-label-gold text-[10px] text-on-surface-variant uppercase block">Konfirmasi Tamu</span>
+<span class="font-title-md text-body-md font-bold text-on-surface">0 / 450 Tamu</span>
+</div>
+<div>
+<span class="font-label-gold text-[10px] text-on-surface-variant uppercase block">Amplop Digital</span>
+<span class="font-title-md text-body-md font-bold text-secondary">Rp 0 (Draft)</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/30">
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-tertiary text-on-tertiary font-medium text-xs hover:bg-tertiary-container hover:text-on-tertiary-container transition-all" onclick="scrollToEditor('faris-anisa')">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Form</span>
+</button>
+<a class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-high text-on-surface-variant opacity-60 pointer-events-none font-medium text-xs" href="#">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Lihat ↗</span>
+</a>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="sr-only peer" onchange="togglePublish(this, 'badge-faris')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary relative"></div>
+<span class="text-xs font-medium text-on-surface-variant">Live Acara</span>
+</label>
+<button class="text-xs font-semibold text-error hover:text-error-container flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:bg-error-container/20 transition-all" onclick="openDeleteModal('Faris &amp; Anisa')">
+<span class="material-symbols-outlined text-[15px]">delete</span>
+<span>Hapus</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 3. STUDIO EDITOR UNDANGAN (7 TAB EDITOR)  -->
+<!-- ========================================== -->
+<section class="flex flex-col bg-surface-container-lowest rounded-3xl shadow-[0_16px_40px_-12px_rgba(0,0,0,0.06)] border border-outline-variant/50 overflow-hidden" id="studio-editor-section">
+<!-- Studio Header with Active Event Meta -->
+<div class="p-6 md:p-8 bg-surface-container-low border-b border-outline-variant/40 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[32px]">auto_stories</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-gold text-label-gold text-tertiary uppercase">Studio Editor 7 Tab</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="text-xs text-on-surface-variant font-medium">Draft Autosafe Aktif</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Walimatul 'Ursy: Raka &amp; Nadya</h2>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs text-on-surface-variant hidden sm:inline">Terakhir disimpan: 2 menit yang lalu</span>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-medium text-body-sm flex items-center gap-2 shadow-sm hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Perubahan</span>
+</button>
+</div>
+</div>
+<!-- Tab Bar Navigation (7 Luxury Tabs) -->
+<div class="border-b border-outline-variant/40 bg-surface px-4 md:px-8 overflow-x-auto">
+<div class="flex gap-2 min-w-max py-3" id="tab-buttons">
+<button class="tab-btn active px-4 py-2.5 rounded-xl font-body-md text-body-sm font-semibold flex items-center gap-2 transition-all bg-primary-container text-on-primary-container shadow-sm" onclick="switchTab(0)">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>1. Info &amp; Sampul</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container" onclick="switchTab(1)">
+<span class="material-symbols-outlined text-[18px]">diversity_1</span>
+<span>2. Profil Mempelai</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container" onclick="switchTab(2)">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>3. Jadwal &amp; Peta</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container" onclick="switchTab(3)">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span>4. Galeri Foto</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container" onclick="switchTab(4)">
+<span class="material-symbols-outlined text-[18px]">timeline</span>
+<span>5. Perjalanan Cinta</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container" onclick="switchTab(5)">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span>6. Hadiah Digital</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container" onclick="switchTab(6)">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>7. Pengaturan &amp; Doa</span>
+</button>
+</div>
+</div>
+<!-- TAB CONTENT CONTAINERS -->
+<div class="p-6 md:p-8">
+<!-- ========================================== -->
+<!-- TAB 1: INFO & SAMPUL + GENERATOR LINK SEBAR -->
+<!-- ========================================== -->
+<div class="tab-panel flex flex-col gap-8" id="panel-0">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left: Meta Form -->
+<div class="lg:col-span-7 flex flex-col gap-5">
+<div>
+<label class="block font-label-gold text-label-gold text-on-surface uppercase mb-2">Nama Acara Lengkap</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/60 focus:border-secondary focus:ring-1 focus:ring-secondary text-body-md text-on-surface shadow-sm outline-none" type="text" value="Walimatul 'Ursy Raka Daniswara &amp; Nadya Maharani"/>
+</div>
+<!-- Custom Slug URL -->
+<div>
+<label class="block font-label-gold text-label-gold text-on-surface uppercase mb-2">Custom Slug URL Undangan</label>
+<div class="flex items-center gap-2">
+<div class="flex-1 flex items-center bg-surface-container-low border border-outline-variant/60 rounded-xl px-4 py-3 text-body-sm">
+<span class="text-on-surface-variant">https://matrimony.id/url/</span>
+<input class="bg-transparent text-secondary font-semibold border-none focus:outline-none flex-1 ml-1" id="slug-input" type="text" value="raka-nadya"/>
+</div>
+<button class="px-4 py-3 bg-secondary text-on-secondary rounded-xl text-body-sm font-medium hover:bg-on-secondary-container transition-all flex items-center gap-1.5 shadow-sm" onclick="copySlugLink()">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span>Salin URL</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- WhatsApp RSVP Confirmation Number -->
+<div>
+<label class="block font-label-gold text-label-gold text-on-surface uppercase mb-2">Nomor WhatsApp RSVP</label>
+<div class="relative">
+<span class="absolute left-3.5 top-3.5 text-on-surface-variant material-symbols-outlined text-[18px]">chat</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl bg-surface-container-lowest border border-outline-variant/60 focus:border-secondary text-body-md text-on-surface outline-none" type="text" value="+62 812-3456-7890"/>
+</div>
+</div>
+<!-- Background Music Control -->
+<div>
+<label class="block font-label-gold text-label-gold text-on-surface uppercase mb-2">Musik Latar Otomatis</label>
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low border border-outline-variant/50">
+<div class="flex items-center gap-2 overflow-hidden">
+<span class="material-symbols-outlined text-tertiary text-[20px]">library_music</span>
+<span class="text-xs font-semibold text-on-surface truncate">Kahitna - Janji Suci.mp3</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- WhatsApp Guest Link Generator -->
+<div class="p-6 rounded-2xl bg-surface-container border border-tertiary/20 shadow-sm flex flex-col gap-4 mt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">forward_to_inbox</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Generator Link Sebar Tamu</h4>
+<p class="text-xs text-on-surface-variant">Buat tautan personalisasi otomatis untuk dibagikan via WhatsApp.</p>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface uppercase mb-1">Nama Penerima / Tamu Undangan</label>
+<div class="flex gap-2">
+<input class="flex-1 px-4 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none focus:border-secondary" id="guest-name-input" oninput="generateGuestLink()" type="text" value="Bapak Budi Santoso &amp; Keluarga"/>
+<button class="px-4 py-2.5 rounded-xl bg-secondary text-on-secondary font-medium text-xs" onclick="generateGuestLink()">Generate</button>
+</div>
+</div>
+<!-- Output Box -->
+<div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/60 flex flex-col gap-2">
+<div class="text-[11px] font-mono text-secondary break-all bg-surface p-2 rounded-lg" id="guest-link-output">
+                  https://matrimony.id/url/raka-nadya?kpd=Bapak+Budi+Santoso+%26+Keluarga
+                </div>
+<div class="flex items-center justify-end gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface text-xs font-medium hover:bg-surface-variant flex items-center gap-1" onclick="copyGeneratedLink()">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span>Salin Tautan</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-lg bg-emerald-600 text-white text-xs font-medium hover:bg-emerald-700 flex items-center gap-1 shadow-sm" onclick="sendViaWA()">
+<span class="material-symbols-outlined text-[15px]">send</span>
+<span>Kirim Langsung via WA</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Cover Portrait Upload & 9:16 Mockup Preview -->
+<div class="lg:col-span-5 flex flex-col items-center gap-4">
+<span class="font-label-gold text-label-gold text-on-surface uppercase">Pratinjau Sampul Pembuka (9:16 Arched Frame)</span>
+<div class="relative w-64 h-[440px] rounded-t-[70px] rounded-b-2xl overflow-hidden shadow-[0_16px_36px_-6px_rgba(0,0,0,0.2)] border-2 border-amber-300/60 p-1.5 bg-surface-container-lowest group">
+<div class="relative w-full h-full rounded-t-[64px] rounded-b-xl overflow-hidden">
+<img alt="Cover Preview" class="w-full h-full object-cover" id="cover-preview-img" src="https://lh3.googleusercontent.com/aida/AEtjO1WSd-ufJV5ICGP5G-QGrLuHci2qE9--hUMX1nCFvzKJluq6m_oN84lJZB8j0Is1m8AqixK8WnY7aha9894fqxEHy-10GL2ss5a2L0gqifHlUXKstwcn0o9JOo6fCPKb4FcnPndwr7QUsMI29LJsyxxU7TK6mTtNO2fpzVnVUbpUwxm3VsVMgNaqxCZpnqBjCZvsuScwIPA6OQYXaV4EPrkCfQa7moqqyScGqLF6ZLJ-aNGNfHr7hz8Z7lwf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-between p-4 text-center text-white">
+<div class="pt-6">
+<span class="text-[9px] font-mono uppercase tracking-widest text-amber-200">The Royal Wedding of</span>
+<h5 class="font-headline-sm text-lg font-bold mt-1">Raka &amp; Nadya</h5>
+</div>
+<div class="pb-4 w-full flex flex-col items-center gap-2">
+<span class="text-[10px] text-white/90">Kepada Yth. Bapak Budi Santoso</span>
+<div class="px-4 py-1.5 rounded-full bg-primary text-white text-[10px] font-bold tracking-wider uppercase shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">mail</span>
+                      Buka Undangan
+                    </div>
+</div>
+</div>
+</div>
+<!-- Upload Overlay on Hover -->
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center gap-2 transition-opacity rounded-t-[70px] rounded-b-2xl cursor-pointer">
+<span class="material-symbols-outlined text-white text-[32px]">upload_file</span>
+<span class="text-xs text-white font-semibold">Ganti Foto Sampul</span>
+<span class="text-[10px] text-white/70">Maks. 5 MB (JPG/PNG)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 2: PROFIL MEMPELAI                    -->
+<!-- ========================================== -->
+<div class="tab-panel hidden flex flex-col gap-8" id="panel-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Mempelai Pria -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-5">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-bold">♂</span>
+<h3 class="font-headline-sm text-title-md text-on-surface">Profil Mempelai Pria</h3>
+</div>
+<span class="font-label-gold text-[10px] text-secondary uppercase">Groom Bio</span>
+</div>
+<!-- Avatar Cropper Section -->
+<div class="flex items-center gap-4">
+<div class="relative w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-amber-400 to-tertiary shadow-md">
+<img alt="Foto Pria" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VOYDEFAESNJ2nUcR_8w5M-_YmDBOBGAzQXFcfXBXqRGCBbeypT5b0s2JyZ4Og7YO4AKBXVjb2SP4SSJZ63GWMdkA7DfWydjV2UF-fztaAuKpw1Uqn7YrTG6CeI95FDMdz4n9Eadwd_-K1VdIJ1khww1nWsJgQIFZJKNTy2Nlko-qTwq9UwI0zknbGfu27_QkjcNzAOUdlOSnPM3M9FwiwWspsw0JVZ9I5nbm7PZoks6j842uy5scY9H5An"/>
+<button class="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+</button>
+</div>
+<div>
+<span class="text-xs font-semibold text-on-surface block">Foto Profil Mempelai Pria</span>
+<span class="text-[11px] text-on-surface-variant block mb-2">Rasio 1:1, Lingkaran Adat Nusantara</span>
+<button class="px-3 py-1 bg-surface-container-highest text-on-surface text-xs rounded-lg hover:bg-surface-variant">Crop / Atur Posisi</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Nama Lengkap &amp; Gelar</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="Raden Raka Daniswara, S.T., M.Sc."/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Nama Panggilan</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="Raka"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Akun Instagram</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="@rakadaniswara"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Putra Dari Pasangan</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="Bapak Ir. Bambang Soediro &amp; Ibu Hj. Ratna Juwita"/>
+</div>
+</div>
+</div>
+<!-- Mempelai Wanita -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-5">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold">♀</span>
+<h3 class="font-headline-sm text-title-md text-on-surface">Profil Mempelai Wanita</h3>
+</div>
+<span class="font-label-gold text-[10px] text-primary uppercase">Bride Bio</span>
+</div>
+<!-- Avatar Cropper Section -->
+<div class="flex items-center gap-4">
+<div class="relative w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-amber-400 to-primary shadow-md">
+<img alt="Foto Wanita" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VsV0yxXeL1X0-yKmc2YChzsDgu7VoZrQ8-ni6Q0yWEeG-ctBOPfzJxnA7U0iZwd29YisyQlhkKOkEcROzASetWhOm7W8CFqoKpYZ8U2RaN_hrJEFE9ivJ1B_9Pco6sGTYCUK7TI-kXl2xaI9kWSa2B7-FEFFwDJdF0D6M3d-iw8cnRWz_NcoiXbGqV0wtZGZ2X0pErcagxgWGE-8hXJcxiI9doClz_b5I0D7yd4uC8oWYp--YxNYyu5bo3"/>
+<button class="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+</button>
+</div>
+<div>
+<span class="text-xs font-semibold text-on-surface block">Foto Profil Mempelai Wanita</span>
+<span class="text-[11px] text-on-surface-variant block mb-2">Rasio 1:1, Lingkaran Adat Nusantara</span>
+<button class="px-3 py-1 bg-surface-container-highest text-on-surface text-xs rounded-lg hover:bg-surface-variant">Crop / Atur Posisi</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Nama Lengkap &amp; Gelar</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="Nadya Maharani Syarif, S.I.Kom."/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Nama Panggilan</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="Nadya"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Akun Instagram</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="@nadyamaharani"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Putri Dari Pasangan</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="text" value="Bapak Dr. Hendra Syarif &amp; Ibu Hj. Siti Zulaikha"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 3: JADWAL & PETA (AUTO IFRAME PARSER)  -->
+<!-- ========================================== -->
+<div class="tab-panel hidden flex flex-col gap-8" id="panel-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Akad Card -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<span class="font-headline-sm text-title-md text-on-surface">1. Akad Nikah / Ijab Qabul</span>
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-secondary/15 text-secondary">Sacred Vow</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Tanggal Akad</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="date" value="2026-10-24"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Waktu / Sesi</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="08:00 - 10:00 WIB"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Nama Tempat / Gedung</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="Masjid Raya Baiturrahman Pavilion"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Alamat Lengkap</label>
+<textarea class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="2">Jl. Dharmawangsa Raya No. 42, Kebayoran Baru, Jakarta Selatan</textarea>
+</div>
+</div>
+<!-- Resepsi Card -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-3">
+<span class="font-headline-sm text-title-md text-on-surface">2. Resepsi Pernikahan</span>
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-primary/15 text-primary">Celebration</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Tanggal Resepsi</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="date" value="2026-10-24"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Waktu / Sesi</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="11:30 - 15:00 WIB"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Nama Tempat / Gedung</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="The Glasshouse Ballroom &amp; Terrace"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Alamat Lengkap</label>
+<textarea class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="2">The Glasshouse Grand Terrace, Senayan District No. 8, Jakarta Pusat</textarea>
+</div>
+</div>
+</div>
+<!-- Google Maps Parser Tool -->
+<div class="p-6 rounded-3xl bg-surface-container border border-tertiary/20 flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">map</span>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Auto-Parser Google Maps Embed &amp; Link</h4>
+<p class="text-xs text-on-surface-variant">Tempelkan seluruh kode tag &lt;iframe&gt; dari Google Maps, sistem akan mengekstrak URL bersih secara live.</p>
+</div>
+</div>
+<span class="text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">Auto-Detect Active</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<div class="lg:col-span-7 flex flex-col gap-3">
+<label class="block text-xs font-semibold text-on-surface">Input Tag HTML Mentah &lt;iframe&gt;:</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant font-mono text-xs text-on-surface outline-none focus:border-secondary" id="raw-iframe-input" oninput="parseMapIframe()" placeholder="&lt;iframe src='https://www.google.com/maps/embed?...' width='600' height='450' ...&gt;&lt;/iframe&gt;" rows="3">&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.294747201824!2d106.7997!3d-6.2248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnMjkuMyJTIDEwNsKwNDcnNTguOSJF!5e0!3m2!1sen!2sid!4v1" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;&lt;/iframe&gt;</textarea>
+<div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant/40 flex flex-col gap-1">
+<span class="text-[11px] font-semibold text-on-surface-variant uppercase">URL Hasil Ekstraksi Otomatis:</span>
+<span class="font-mono text-xs text-secondary break-all" id="clean-url-display">https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.294747201824!2d106.7997!3d-6.2248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnMjkuMyJTIDEwNsKwNDcnNTguOSJF!5e0!3m2!1sen!2sid!4v1</span>
+</div>
+</div>
+<!-- Preview Card -->
+<div class="lg:col-span-5 flex flex-col gap-2">
+<span class="text-xs font-semibold text-on-surface">Pratinjau Navigasi Peta Acara</span>
+<div class="w-full h-44 rounded-2xl bg-surface-variant overflow-hidden shadow-inner flex items-center justify-center relative border border-outline-variant/40" data-location="Jakarta Selatan, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0L7gvTYUJJxqgk1UHrD7wc4Gz9-r7LxVicE9DRJTeGZLLzL3EgAlZ75OWZdG_WZ7b6Jvy7Xp8aRs4nSqr3I9NQ-uj-mx2pSmeVWXEDNVMTNUtfwzou3Um4Sa_v1oDBgCHyKSo-ZRNEiM0mbctXXuv8UZf9iIhHnP9CBsh4mUbgEZzQ4Wszq2RLfyxsy7dFb3de36z-KZ532vhtRvJafh8_B7TuJGLBFS_m5TKkbPF6_xYwM96V8gv3Q')">
+<div class="absolute inset-0 bg-black/20 flex flex-col items-center justify-center text-white">
+<span class="material-symbols-outlined text-[32px] text-primary">pin_drop</span>
+<span class="text-xs font-bold drop-shadow">The Glasshouse Jakarta</span>
+<span class="text-[10px] text-white/90">Klik untuk Buka Rute Google Maps</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 4: GALERI FOTO (MULTI DROPZONE)       -->
+<!-- ========================================== -->
+<div class="tab-panel hidden flex flex-col gap-6" id="panel-3">
+<!-- Dropzone -->
+<div class="p-8 border-2 border-dashed border-outline-variant/70 rounded-3xl bg-surface-container-low flex flex-col items-center justify-center text-center gap-3 cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[36px]">cloud_upload</span>
+</div>
+<div>
+<h4 class="font-title-md text-body-lg font-bold text-on-surface">Tarik &amp; Letakkan Foto Romantis Disini</h4>
+<p class="text-xs text-on-surface-variant">Mendukung file JPG, WEBP, PNG hingga resolusi 4K (Maks. 10MB per berkas)</p>
+</div>
+<button class="px-5 py-2 rounded-xl bg-secondary text-on-secondary text-xs font-semibold shadow-sm">Jelajahi Berkas Galeri</button>
+</div>
+<!-- Grid Previews -->
+<div class="flex items-center justify-between pt-2">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Foto Terunggah (6 Foto)</h4>
+<span class="text-xs text-on-surface-variant">Urutkan dengan drag-and-drop</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<div class="relative group rounded-2xl overflow-hidden shadow-sm aspect-[4/5] bg-surface-variant">
+<img alt="Foto 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSd-ufJV5ICGP5G-QGrLuHci2qE9--hUMX1nCFvzKJluq6m_oN84lJZB8j0Is1m8AqixK8WnY7aha9894fqxEHy-10GL2ss5a2L0gqifHlUXKstwcn0o9JOo6fCPKb4FcnPndwr7QUsMI29LJsyxxU7TK6mTtNO2fpzVnVUbpUwxm3VsVMgNaqxCZpnqBjCZvsuScwIPA6OQYXaV4EPrkCfQa7moqqyScGqLF6ZLJ-aNGNfHr7hz8Z7lwf"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"><span class="material-symbols-outlined text-[16px]">crop</span></button>
+<button class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center hover:bg-red-700"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/60 text-[9px] text-white">4:5</span>
+</div>
+<div class="relative group rounded-2xl overflow-hidden shadow-sm aspect-[4/5] bg-surface-variant">
+<img alt="Foto 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VsV0yxXeL1X0-yKmc2YChzsDgu7VoZrQ8-ni6Q0yWEeG-ctBOPfzJxnA7U0iZwd29YisyQlhkKOkEcROzASetWhOm7W8CFqoKpYZ8U2RaN_hrJEFE9ivJ1B_9Pco6sGTYCUK7TI-kXl2xaI9kWSa2B7-FEFFwDJdF0D6M3d-iw8cnRWz_NcoiXbGqV0wtZGZ2X0pErcagxgWGE-8hXJcxiI9doClz_b5I0D7yd4uC8oWYp--YxNYyu5bo3"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"><span class="material-symbols-outlined text-[16px]">crop</span></button>
+<button class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center hover:bg-red-700"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/60 text-[9px] text-white">4:5</span>
+</div>
+<div class="relative group rounded-2xl overflow-hidden shadow-sm aspect-[4/5] bg-surface-variant">
+<img alt="Foto 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VOYDEFAESNJ2nUcR_8w5M-_YmDBOBGAzQXFcfXBXqRGCBbeypT5b0s2JyZ4Og7YO4AKBXVjb2SP4SSJZ63GWMdkA7DfWydjV2UF-fztaAuKpw1Uqn7YrTG6CeI95FDMdz4n9Eadwd_-K1VdIJ1khww1nWsJgQIFZJKNTy2Nlko-qTwq9UwI0zknbGfu27_QkjcNzAOUdlOSnPM3M9FwiwWspsw0JVZ9I5nbm7PZoks6j842uy5scY9H5An"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"><span class="material-symbols-outlined text-[16px]">crop</span></button>
+<button class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center hover:bg-red-700"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/60 text-[9px] text-white">4:5</span>
+</div>
+<div class="relative group rounded-2xl overflow-hidden shadow-sm aspect-[4/5] bg-surface-variant">
+<img alt="Foto 4" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WSd-ufJV5ICGP5G-QGrLuHci2qE9--hUMX1nCFvzKJluq6m_oN84lJZB8j0Is1m8AqixK8WnY7aha9894fqxEHy-10GL2ss5a2L0gqifHlUXKstwcn0o9JOo6fCPKb4FcnPndwr7QUsMI29LJsyxxU7TK6mTtNO2fpzVnVUbpUwxm3VsVMgNaqxCZpnqBjCZvsuScwIPA6OQYXaV4EPrkCfQa7moqqyScGqLF6ZLJ-aNGNfHr7hz8Z7lwf"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"><span class="material-symbols-outlined text-[16px]">crop</span></button>
+<button class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center hover:bg-red-700"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/60 text-[9px] text-white">4:5</span>
+</div>
+<div class="relative group rounded-2xl overflow-hidden shadow-sm aspect-[4/5] bg-surface-variant">
+<img alt="Foto 5" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VsV0yxXeL1X0-yKmc2YChzsDgu7VoZrQ8-ni6Q0yWEeG-ctBOPfzJxnA7U0iZwd29YisyQlhkKOkEcROzASetWhOm7W8CFqoKpYZ8U2RaN_hrJEFE9ivJ1B_9Pco6sGTYCUK7TI-kXl2xaI9kWSa2B7-FEFFwDJdF0D6M3d-iw8cnRWz_NcoiXbGqV0wtZGZ2X0pErcagxgWGE-8hXJcxiI9doClz_b5I0D7yd4uC8oWYp--YxNYyu5bo3"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"><span class="material-symbols-outlined text-[16px]">crop</span></button>
+<button class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center hover:bg-red-700"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/60 text-[9px] text-white">4:5</span>
+</div>
+<div class="relative group rounded-2xl overflow-hidden shadow-sm aspect-[4/5] bg-surface-variant">
+<img alt="Foto 6" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VOYDEFAESNJ2nUcR_8w5M-_YmDBOBGAzQXFcfXBXqRGCBbeypT5b0s2JyZ4Og7YO4AKBXVjb2SP4SSJZ63GWMdkA7DfWydjV2UF-fztaAuKpw1Uqn7YrTG6CeI95FDMdz4n9Eadwd_-K1VdIJ1khww1nWsJgQIFZJKNTy2Nlko-qTwq9UwI0zknbGfu27_QkjcNzAOUdlOSnPM3M9FwiwWspsw0JVZ9I5nbm7PZoks6j842uy5scY9H5An"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-2 transition-opacity">
+<button class="w-8 h-8 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"><span class="material-symbols-outlined text-[16px]">crop</span></button>
+<button class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center hover:bg-red-700"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+<span class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-black/60 text-[9px] text-white">4:5</span>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 5: PERJALANAN CINTA (LOVE STORY)       -->
+<!-- ========================================== -->
+<div class="tab-panel hidden flex flex-col gap-6" id="panel-4">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Kronologi Babak Kisah Kasih</h4>
+<p class="text-xs text-on-surface-variant">Ceritakan momen berharga perjalanan cinta Anda dari awal bertatap mata hingga pelaminan.</p>
+</div>
+<button class="px-4 py-2 rounded-xl bg-tertiary text-on-tertiary text-xs font-semibold flex items-center gap-1.5 hover:bg-tertiary-container hover:text-on-tertiary-container transition-all" onclick="addStoryChapter()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Tambah Babak Kisah Baru</span>
+</button>
+</div>
+<div class="flex flex-col gap-4" id="story-repeater-container">
+<!-- Babak 1 -->
+<div class="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col md:flex-row gap-4 items-start justify-between">
+<div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold font-headline-sm">1</div>
+<div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Tahun / Periode</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="2022"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-xs font-semibold text-on-surface mb-1">Judul Babak</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="Pertemuan Pertama di Kampus Gadjah Mada"/>
+</div>
+<div class="md:col-span-3">
+<label class="block text-xs font-semibold text-on-surface mb-1">Deskripsi Narasi</label>
+<textarea class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="2">Berawal dari kepanitiaan seminar internasional, sebuah obrolan singkat di pelataran perpustakaan menjadi pembuka babak terindah dalam hidup kami.</textarea>
+</div>
+</div>
+<button class="text-error hover:bg-error-container/20 p-2 rounded-xl" onclick="this.parentElement.remove()">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+<!-- Babak 2 -->
+<div class="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col md:flex-row gap-4 items-start justify-between">
+<div class="w-10 h-10 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold font-headline-sm">2</div>
+<div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Tahun / Periode</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="2024"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-xs font-semibold text-on-surface mb-1">Judul Babak</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="Satu Komitmen Mengarungi Cita"/>
+</div>
+<div class="md:col-span-3">
+<label class="block text-xs font-semibold text-on-surface mb-1">Deskripsi Narasi</label>
+<textarea class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="2">Menjembatani perbedaan dan jarak antar kota, kami berjanji untuk saling menguatkan dalam ikatan doa dan restu orang tua tercinta.</textarea>
+</div>
+</div>
+<button class="text-error hover:bg-error-container/20 p-2 rounded-xl" onclick="this.parentElement.remove()">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+<!-- Babak 3 -->
+<div class="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col md:flex-row gap-4 items-start justify-between">
+<div class="w-10 h-10 rounded-full bg-tertiary/20 text-tertiary flex items-center justify-center font-bold font-headline-sm">3</div>
+<div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Tahun / Periode</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="2026"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-xs font-semibold text-on-surface mb-1">Judul Babak</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="Lamaran &amp; Menuju Janji Suci"/>
+</div>
+<div class="md:col-span-3">
+<label class="block text-xs font-semibold text-on-surface mb-1">Deskripsi Narasi</label>
+<textarea class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="2">Dengan ketulusan jiwa, ikrar suci dipertemukan di hadapan kedua keluarga besar untuk melangkah bersama menyempurnakan ibadah.</textarea>
+</div>
+</div>
+<button class="text-error hover:bg-error-container/20 p-2 rounded-xl" onclick="this.parentElement.remove()">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 6: HADIAH DIGITAL (AMPLOP DIGITAL)    -->
+<!-- ========================================== -->
+<div class="tab-panel hidden flex flex-col gap-8" id="panel-5">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Bank Accounts Configuration -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Rekening Bank &amp; Dompet Digital</h4>
+<button class="px-3 py-1.5 rounded-xl bg-secondary text-on-secondary text-xs font-medium">+ Tambah Rekening</button>
+</div>
+<!-- Bank 1: BCA -->
+<div class="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-bold text-xs uppercase px-2.5 py-1 rounded bg-blue-100 text-blue-800">Bank Central Asia (BCA)</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-[11px] font-semibold text-on-surface mb-1">Nomor Rekening</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm font-mono text-on-surface" type="text" value="8420-192-881"/>
+</div>
+<div>
+<label class="block text-[11px] font-semibold text-on-surface mb-1">Atas Nama (A.N)</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="Raka Daniswara"/>
+</div>
+</div>
+</div>
+<!-- Bank 2: Mandiri -->
+<div class="p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-bold text-xs uppercase px-2.5 py-1 rounded bg-amber-100 text-amber-900">Bank Mandiri</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-8 h-4 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-[11px] font-semibold text-on-surface mb-1">Nomor Rekening</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm font-mono text-on-surface" type="text" value="137-00-1928374-1"/>
+</div>
+<div>
+<label class="block text-[11px] font-semibold text-on-surface mb-1">Atas Nama (A.N)</label>
+<input class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" type="text" value="Nadya Maharani Syarif"/>
+</div>
+</div>
+</div>
+<!-- Physical Gift Address Box -->
+<div class="p-5 rounded-2xl bg-surface-container border border-outline-variant/60 flex flex-col gap-2">
+<span class="text-xs font-semibold text-on-surface uppercase">Alamat Kirim Kado Fisik</span>
+<textarea class="w-full px-3.5 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="2">Kediaman Mempelai Wanita: Jl. Cempaka Putih Timur No. 18, Jakarta Pusat 10510 (Up: Ibu Hj. Siti Zulaikha / 0812-9988-7766)</textarea>
+</div>
+</div>
+<!-- QRIS Upload & Metal Card Preview -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<span class="font-label-gold text-label-gold text-on-surface uppercase">QRIS Standar Nasional (QRIS Instant)</span>
+<div class="p-6 rounded-3xl bg-surface-container-low border border-dashed border-outline-variant/70 flex flex-col items-center justify-center text-center gap-3">
+<div class="w-40 h-40 bg-surface-container-lowest rounded-2xl p-3 shadow-md flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-[64px] text-on-surface-variant">qr_code_2</span>
+<span class="text-[10px] font-mono text-on-surface-variant">QRIS MATRIMONY</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-secondary text-on-secondary text-xs font-medium">Unggah Berkas QRIS (.PNG)</button>
+<span class="text-[11px] text-on-surface-variant">Terintegrasi otomatis dengan tombol "Simpan Gambar QR" tamu</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- TAB 7: PENGATURAN & DOA (MODULAR TOGGLE)   -->
+<!-- ========================================== -->
+<div class="tab-panel hidden flex flex-col gap-8" id="panel-6">
+<!-- Checklist Fitur Modular -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Aktivasi Fitur &amp; Seksi Modular Undangan</h4>
+<span class="text-xs text-on-surface-variant">Kustomisasi seksi yang tampil di link tamu</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Sampul Pembuka</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Musik Latar</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Doa &amp; Ayat Suci</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Profil Mempelai</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Jadwal &amp; Peta</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Story Timeline</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Galeri Media</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Amplop Digital</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">RSVP &amp; Buku Tamu</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+<label class="p-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex items-center justify-between cursor-pointer">
+<span class="text-xs font-medium text-on-surface">Live Streaming</span>
+<input checked="" class="accent-primary" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Pilihan Tipe Galeri -->
+<div class="flex flex-col gap-3">
+<label class="font-title-md text-body-md text-on-surface font-semibold">Pilihan Tipe Tampilan Galeri Foto</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="p-4 rounded-2xl bg-surface-container-low border-2 border-primary flex items-center gap-3 cursor-pointer">
+<input checked="" class="accent-primary" name="gallery_type" type="radio"/>
+<div>
+<span class="text-xs font-bold text-on-surface block">Grid (Kolase 2 Kolom)</span>
+<span class="text-[11px] text-on-surface-variant">Tampilan mosaik estetik khas majalah pernikahan.</span>
+</div>
+</label>
+<label class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/50 flex items-center gap-3 cursor-pointer">
+<input class="accent-primary" name="gallery_type" type="radio"/>
+<div>
+<span class="text-xs font-bold text-on-surface block">Satuan (Vertikal Penuh)</span>
+<span class="text-[11px] text-on-surface-variant">Satu per satu dengan scroll vertikal megah.</span>
+</div>
+</label>
+<label class="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/50 flex items-center gap-3 cursor-pointer">
+<input class="accent-primary" name="gallery_type" type="radio"/>
+<div>
+<span class="text-xs font-bold text-on-surface block">Slide (Carousel)</span>
+<span class="text-[11px] text-on-surface-variant">Geser kiri-kanan dengan navigasi titik emas.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Teks Doa & Sambutan -->
+<div class="flex flex-col gap-4">
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Teks Doa, Muqaddimah &amp; Sambutan</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Salam &amp; Muqaddimah Pembuka</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" rows="3">Assalamu'alaikum Warahmatullahi Wabarakatuh. Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam perhelatan suci pernikahan putra-putri kami:</textarea>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Kutipan Doa / Ayat Suci (QS. Ar-Rum: 21)</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface" rows="3">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Studio Save Footer -->
+<div class="p-5 bg-surface-container border-t border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Perubahan konfigurasi otomatis tersinkronisasi ke server CDN</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-5 py-2 rounded-xl bg-surface-container-highest text-on-surface text-xs font-semibold hover:bg-surface-variant">Pratinjau Langsung</button>
+<button class="px-6 py-2.5 rounded-xl bg-primary text-on-primary text-xs font-semibold shadow-md hover:bg-primary-container transition-all">Simpan &amp; Terapkan</button>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. MODALS (INTERACTIVE DIALOGS)            -->
+<!-- ========================================== -->
+<!-- Modal 1: Buat Acara Baru -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4" id="create-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-3xl shadow-2xl border border-outline-variant/60 overflow-hidden flex flex-col">
+<div class="p-6 bg-surface-container-low border-b border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-title-md text-on-surface">Buat Acara Pernikahan Baru</h3>
+<span class="text-[11px] text-on-surface-variant">Langkah awal inisialisasi basis data mahligai</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeModal('create-modal')">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Mempelai Pria</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none focus:border-secondary" placeholder="Misal: Raka" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Mempelai Wanita</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none focus:border-secondary" placeholder="Misal: Nadya" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Jenis Acara</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none">
+<option>Akad &amp; Resepsi</option>
+<option>Resepsi Saja</option>
+<option>Pemberkatan &amp; Resepsi</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Agama / Tradisi</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none">
+<option>Islam</option>
+<option>Kristen / Katolik</option>
+<option>Hindu Adat Bali</option>
+<option>Budha / Tradisi Tionghoa</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-on-surface mb-1">Tanggal Mulai Acara</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface outline-none" type="date" value="2026-10-24"/>
+</div>
+</div>
+<div class="p-5 bg-surface-container-low border-t border-outline-variant/40 flex items-center justify-end gap-3">
+<button class="px-4 py-2 rounded-xl text-xs font-medium text-on-surface-variant hover:bg-surface-container-high" onclick="closeModal('create-modal')">Batal</button>
+<button class="px-5 py-2 rounded-xl bg-primary text-on-primary text-xs font-semibold shadow-sm hover:bg-primary-container" onclick="closeModal('create-modal'); alert('Acara baru berhasil diinisialisasi dalam database!');">Simpan &amp; Masuk Studio Editor</button>
+</div>
+</div>
+</div>
+<!-- Modal 2: Konfirmasi Hapus Acara (Super Admin Danger Dialog) -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4" id="delete-modal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-3xl shadow-2xl border-2 border-error/30 overflow-hidden flex flex-col">
+<div class="p-6 bg-error-container/20 border-b border-error/20 flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-error text-on-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-title-md text-error font-bold">Peringatan: Hapus Acara Permanen</h3>
+<span class="text-[11px] text-error/80 uppercase tracking-wider font-semibold">Tindakan Super Admin Khusus</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<p class="text-body-sm text-on-surface leading-relaxed">
+          Apakah Anda yakin ingin menghapus data acara <strong class="text-error font-bold" id="delete-event-name">Raka &amp; Nadya</strong> dari database MySQL dan menghapus permanen seluruh berkas media di folder <code class="px-1.5 py-0.5 rounded bg-surface-container-high font-mono text-xs">/uploads/</code>?
+        </p>
+<p class="text-xs text-error font-semibold bg-error-container/30 p-3 rounded-xl">
+          Tindakan ini tidak dapat dibatalkan. Seluruh buku tamu, link sebar, dan data kado digital akan terhapus seketika.
+        </p>
+</div>
+<div class="p-5 bg-surface-container-low border-t border-outline-variant/40 flex items-center justify-end gap-3">
+<button class="px-4 py-2 rounded-xl text-xs font-medium text-on-surface-variant hover:bg-surface-container-high" onclick="closeModal('delete-modal')">Batal</button>
+<button class="px-5 py-2 rounded-xl bg-error text-on-error text-xs font-bold shadow-md hover:bg-red-700" onclick="confirmDeleteAction()">Hapus Permanen</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 5. JAVASCRIPT LOGIC (CLIENT SIDE)          -->
+<!-- ========================================== -->
+<script>
+  function switchTab(index) {
+    const panels = document.querySelectorAll('.tab-panel');
+    const buttons = document.querySelectorAll('#tab-buttons .tab-btn');
+    
+    panels.forEach((p, idx) => {
+      if (idx === index) {
+        p.classList.remove('hidden');
+      } else {
+        p.classList.add('hidden');
+      }
+    });
+
+    buttons.forEach((btn, idx) => {
+      if (idx === index) {
+        btn.className = "tab-btn active px-4 py-2.5 rounded-xl font-body-md text-body-sm font-semibold flex items-center gap-2 transition-all bg-primary-container text-on-primary-container shadow-sm";
+      } else {
+        btn.className = "tab-btn px-4 py-2.5 rounded-xl font-body-md text-body-sm font-medium flex items-center gap-2 transition-all text-on-surface-variant hover:bg-surface-container";
+      }
+    });
+  }
+
+  function togglePublish(el, badgeId) {
+    const badge = document.getElementById(badgeId);
+    if (!badge) return;
+    if (el.checked) {
+      badge.className = "px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center gap-1 shadow-sm";
+      badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Published';
+    } else {
+      badge.className = "px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-700 border border-gray-300 flex items-center gap-1 shadow-sm";
+      badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span> Draft';
+    }
+  }
+
+  function scrollToEditor(eventSlug) {
+    const editor = document.getElementById('studio-editor-section');
+    if (editor) {
+      editor.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function copySlugLink() {
+    const slug = document.getElementById('slug-input').value;
+    const url = 'https://matrimony.id/url/' + slug;
+    navigator.clipboard.writeText(url);
+    alert('Tautan Publik disalin: ' + url);
+  }
+
+  function generateGuestLink() {
+    const nameInput = document.getElementById('guest-name-input').value.trim();
+    const slug = document.getElementById('slug-input').value.trim();
+    const encoded = encodeURIComponent(nameInput).replace(/%20/g, '+');
+    const fullLink = 'https://matrimony.id/url/' + slug + '?kpd=' + encoded;
+    document.getElementById('guest-link-output').innerText = fullLink;
+  }
+
+  function copyGeneratedLink() {
+    const link = document.getElementById('guest-link-output').innerText;
+    navigator.clipboard.writeText(link);
+    alert('Tautan Tamu WhatsApp disalin: ' + link);
+  }
+
+  function sendViaWA() {
+    const guest = document.getElementById('guest-name-input').value.trim();
+    const link = document.getElementById('guest-link-output').innerText;
+    const message = encodeURIComponent(
+      "Kepada Yth. " + guest + "\n\nTanpa mengurangi rasa hormat, kami bermaksud mengundang Anda untuk hadir pada perhelatan pernikahan kami:\n\n" + link + "\n\nMerupakan suatu kehormatan dan kebahagiaan bagi kami apabila berkenan hadir dan memberikan doa restu.\n\nTerima kasih."
+    );
+    window.open('https://api.whatsapp.com/send?text=' + message, '_blank');
+  }
+
+  function parseMapIframe() {
+    const raw = document.getElementById('raw-iframe-input').value;
+    const match = raw.match(/src=["']([^"']+)["']/);
+    const display = document.getElementById('clean-url-display');
+    if (match && match[1]) {
+      display.innerText = match[1];
+    } else if (raw.startsWith('http')) {
+      display.innerText = raw.trim();
+    }
+  }
+
+  function addStoryChapter() {
+    const container = document.getElementById('story-repeater-container');
+    const count = container.children.length + 1;
+    const div = document.createElement('div');
+    div.className = "p-5 rounded-2xl bg-surface-container-low border border-outline-variant/40 flex flex-col md:flex-row gap-4 items-start justify-between";
+    div.innerHTML = `
+      <div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold font-headline-sm">${count}</div>
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div>
+          <label class="block text-xs font-semibold text-on-surface mb-1">Tahun / Periode</label>
+          <input type="text" placeholder="2026" class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface">
+        </div>
+        <div class="md:col-span-2">
+          <label class="block text-xs font-semibold text-on-surface mb-1">Judul Babak</label>
+          <input type="text" placeholder="Babak Cerita Cinta" class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface">
+        </div>
+        <div class="md:col-span-3">
+          <label class="block text-xs font-semibold text-on-surface mb-1">Deskripsi Narasi</label>
+          <textarea rows="2" placeholder="Tuliskan kisah indah..." class="w-full px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant text-body-sm text-on-surface"></textarea>
+        </div>
+      </div>
+      <button onclick="this.parentElement.remove()" class="text-error hover:bg-error-container/20 p-2 rounded-xl">
+        <span class="material-symbols-outlined text-[20px]">delete</span>
+      </button>
+    `;
+    container.appendChild(div);
+  }
+
+  function openModal(modalId) {
+    const m = document.getElementById(modalId);
+    if (m) {
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+  }
+
+  function closeModal(modalId) {
+    const m = document.getElementById(modalId);
+    if (m) {
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+  }
+
+  function openDeleteModal(name) {
+    document.getElementById('delete-event-name').innerText = name;
+    openModal('delete-modal');
+  }
+
+  function confirmDeleteAction() {
+    alert('Data acara dan seluruh folder /uploads/ terkait berhasil dihapus permanen oleh Super Admin.');
+    closeModal('delete-modal');
+  }
+</script></main></div></body></html>
