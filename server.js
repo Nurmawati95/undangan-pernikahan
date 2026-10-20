@@ -23,6 +23,8 @@ const MIME = {
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
+  '.md': 'text/markdown; charset=utf-8',
+  '.txt': 'text/plain; charset=utf-8',
 };
 
 const server = http.createServer((req, res) => {
@@ -44,9 +46,22 @@ const server = http.createServer((req, res) => {
       return;
     }
     const ext = path.extname(filePath).toLowerCase();
-    res.writeHead(200, { 'Content-Type': MIME[ext] || 'application/octet-stream' });
+    const type = MIME[ext] || 'application/octet-stream';
+    res.writeHead(200, {
+      'Content-Type': type,
+      'Content-Length': data.length,
+      'Cache-Control': 'no-cache',
+    });
     res.end(data);
   });
+});
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`❌ Port ${PORT} sudah dipakai. Matikan server lama dulu atau ganti PORT.`);
+    process.exit(1);
+  }
+  console.error(err);
 });
 
 server.listen(PORT, () => {

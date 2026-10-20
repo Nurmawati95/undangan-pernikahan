@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dokumentasi Desain — Royal Nusantara Matrimony</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>body{font-family:'Plus Jakarta Sans',sans-serif}.font-serif{font-family:'Playfair Display',serif}.swatch{width:100%;height:56px;border-radius:12px;border:1px solid rgba(0,0,0,.1)}</style>
+</head>
+<body class="bg-[#FFF8F6] text-[#201A17] min-h-screen">
+<header class="max-w-3xl mx-auto px-4 pt-8 pb-4 text-center">
+  <p class="text-xs tracking-[0.18em] uppercase font-bold text-[#B40066]">Royal Nusantara Matrimony</p>
+  <h1 class="font-serif text-3xl mt-1">Dokumentasi Desain</h1>
+  <p class="text-sm text-stone-500 mt-2">Disalin dari <code>design/royal_nusantara_matrimony/DESIGN.md</code> agar bisa dibaca via localhost.</p>
+  <nav class="mt-4 flex gap-2 justify-center text-sm">
+    <a href="/" class="px-4 py-2 rounded-full bg-stone-900 text-white">← Undangan</a>
+    <a href="/galeri.html" class="px-4 py-2 rounded-full border border-stone-300">Galeri Foto</a>
+  </nav>
+</header>
+<main class="max-w-3xl mx-auto px-4 pb-12 space-y-6">
+  <section class="bg-white rounded-2xl border p-5 shadow-sm">
+    <h2 class="font-serif text-xl mb-1">Brand &amp; Style</h2>
+    <p class="text-sm text-stone-600">Regal elegance khas pernikahan Indonesia: <b>Romantic Glassmorphism</b> + <b>Regal Editorial Print</b>. Kaca frosted ivory &amp; champagne di atas foto, motif lengkung arsitektural, simetri Songket &amp; Batik Kawung, bingkai metalik hangat.</p>
+  </section>
+  <section class="bg-white rounded-2xl border p-5 shadow-sm">
+    <h2 class="font-serif text-xl mb-3">Warna</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+      <div><div class="swatch" style="background:#FF3E9B"></div><p class="mt-1 font-bold">Primary Rose</p><p class="text-stone-500">#FF3E9B — CTA, segel</p></div>
+      <div><div class="swatch" style="background:#FF88BA"></div><p class="mt-1 font-bold">Blush</p><p class="text-stone-500">#FF88BA — glow lembut</p></div>
+      <div><div class="swatch" style="background:#3A8B95"></div><p class="mt-1 font-bold">Peacock Teal</p><p class="text-stone-500">#3A8B95 — heritage</p></div>
+      <div><div class="swatch" style="background:#66D0BC"></div><p class="mt-1 font-bold">Seafoam</p><p class="text-stone-500">#66D0BC — aksen alam</p></div>
+      <div><div class="swatch" style="background:#D4AF37"></div><p class="mt-1 font-bold">Champagne Gold</p><p class="text-stone-500">#D4AF37 — benang emas</p></div>
+      <div><div class="swatch" style="background:#C5A059"></div><p class="mt-1 font-bold">Antique Brass</p><p class="text-stone-500">#C5A059 — border ornamen</p></div>
+      <div><div class="swatch" style="background:#FDFBF7"></div><p class="mt-1 font-bold">Ivory Cream</p><p class="text-stone-500">#FDFBF7 — kanvas utama</p></div>
+      <div><div class="swatch" style="background:#1F1916"></div><p class="mt-1 font-bold">Espresso</p><p class="text-stone-500">#1F1916 — teks</p></div>
+      <div><div class="swatch" style="background:#B40066"></div><p class="mt-1 font-bold">Deep Rose</p><p class="text-stone-500">#B40066 — primary sistem</p></div>
+    </div>
+  </section>
+  <section class="bg-white rounded-2xl border p-5 shadow-sm">
+    <h2 class="font-serif text-xl mb-1">Tipografi</h2>
+    <ul class="text-sm text-stone-600 list-disc pl-5 space-y-1">
+      <li><b class="font-serif">Playfair Display</b> — nama pasangan, judul bab. Varian <i>italic</i> untuk kata transisi ("The Wedding of", "and").</li>
+      <li><b>Plus Jakarta Sans</b> — detail acara, jadwal Akad &amp; Resepsi, peta, RSVP, form.</li>
+      <li><b>Label emas</b> — uppercase, tracking lebar, kesan deboss foil emas.</li>
+    </ul>
+    <div class="mt-3 space-y-1">
+      <p class="font-serif text-2xl">Raka &amp; Nadya <span class="italic text-stone-500 text-lg">— The Wedding of</span></p>
+      <p class="text-xs tracking-[0.18em] uppercase font-bold text-[#B40066]">Undangan Pernikahan</p>
+    </div>
+  </section>
+  <section class="bg-white rounded-2xl border p-5 shadow-sm">
+    <h2 class="font-serif text-xl mb-1">Layout &amp; Bentuk</h2>
+    <ul class="text-sm text-stone-600 list-disc pl-5 space-y-1">
+      <li>Mobile-first, kolom tunggal max 480px, terpusat di desktop. Desktop lebar memakai grid 12 kolom max 1120px.</li>
+      <li>Ritme vertikal lega antar segmen: Cover → Couple Bio → Event → RSVP → Amplop Digital → Wishes.</li>
+      <li>Foto bingkai lengkung arsitektural (<code>rounded-t-full</code>), rasio 4:5 / 9:16.</li>
+      <li>Kartu kaca: <code>rgba(253,251,247,0.78)</code> + <code>blur(16px)</code> + border <code>rgba(212,175,55,0.35)</code>.</li>
+    </ul>
+  </section>
+  <section class="bg-white rounded-2xl border p-5 shadow-sm">
+    <h2 class="font-serif text-xl mb-1">File Asli</h2>
+    <ul class="text-sm text-stone-600 list-disc pl-5">
+      <li><code>design/royal_nusantara_matrimony/DESIGN.md</code> (192 baris, token warna + tipografi + spacing lengkap)</li>
+      <li><code>design/.../screen.png</code> — preview tiap desain (161 KB – 2,4 MB)</li>
+      <li><code>assets/</code> — foto lokal: couple.jpg, groom.jpg, bride.jpg, preview.png</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
