@@ -1,0 +1,3 @@
+# Tambahan .gitignore agar kunci tidak bocor
+.env
+.env.local

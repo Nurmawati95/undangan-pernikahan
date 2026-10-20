@@ -662,6 +662,9 @@
 <select class="w-full text-xs rounded-xl border-stone-200 focus:border-brand-gold focus:ring focus:ring-brand-gold/20 p-2.5" id="guest-count">
 <option value="1 Orang">1 Orang</option>
 <option value="2 Orang">2 Orang</option>
+<option value="3 Orang">3 Orang</option>
+<option value="4 Orang">4 Orang</option>
+<option value="5+ Orang">5+ Orang</option>
 </select>
 </div>
 <div>
@@ -674,46 +677,31 @@
 </button>
 </form>
 </div>
-<!-- Live Feed of Guest Wishes -->
+<!-- Live Feed of Guest Wishes (dinamis dari Supabase) -->
 <div class="max-w-sm mx-auto text-left">
 <div class="flex items-center justify-between mb-3 px-1">
-<h4 class="text-xs font-bold uppercase tracking-wider text-stone-600">Doa Restu Tersampaikan (32)</h4>
+<h4 class="text-xs font-bold uppercase tracking-wider text-stone-600">Doa Restu Tersampaikan (<span id="wishes-count">0</span>)</h4>
 <span class="text-[10px] text-brand-teal font-semibold"><i class="fa-solid fa-bolt mr-1"></i>Live Feed</span>
 </div>
+<!-- Ringkasan konfirmasi kehadiran -->
+<div id="rsvp-summary" class="grid grid-cols-3 gap-2 mb-3">
+<div class="rounded-xl border border-brand-gold/40 bg-brand-ivory p-2 text-center">
+<p class="text-base font-bold text-brand-darkteal leading-none" id="summary-hadir">0</p>
+<p class="text-[8px] uppercase font-bold text-stone-500 tracking-wider mt-1">Hadir</p>
+</div>
+<div class="rounded-xl border border-stone-200 bg-stone-50 p-2 text-center">
+<p class="text-base font-bold text-stone-600 leading-none" id="summary-berhalangan">0</p>
+<p class="text-[8px] uppercase font-bold text-stone-500 tracking-wider mt-1">Berhalangan</p>
+</div>
+<div class="rounded-xl border border-brand-rose/30 bg-pink-50 p-2 text-center">
+<p class="text-base font-bold text-brand-rose leading-none" id="summary-tamu">0</p>
+<p class="text-[8px] uppercase font-bold text-stone-500 tracking-wider mt-1">Est. Tamu</p>
+</div>
+</div>
 <div class="space-y-3 max-h-80 overflow-y-auto pr-1 no-scrollbar" id="wishes-container">
-<!-- Wish Card 1 -->
-<div class="bg-brand-ivory rounded-xl p-3.5 border border-stone-200 shadow-sm">
-<div class="flex items-center justify-between mb-1">
-<p class="text-xs font-bold text-brand-darkteal">Farhan &amp; Anisa</p>
-<span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Hadir (2 Orang)</span>
-</div>
-<p class="text-[11px] text-stone-700 leading-relaxed">
-                Selamat menempuh hidup baru Raka &amp; Nadya! Semoga menjadi keluarga yang sakinah, mawaddah, warrahmah. Dilimpahi keberkahan selalu. Aamiin!
-              </p>
-<span class="block text-[9px] text-stone-400 mt-1.5 italic">2 menit lalu</span>
-</div>
-<!-- Wish Card 2 -->
-<div class="bg-brand-ivory rounded-xl p-3.5 border border-stone-200 shadow-sm">
-<div class="flex items-center justify-between mb-1">
-<p class="text-xs font-bold text-brand-darkteal">Dr. Rizky Ramadhan</p>
-<span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Hadir (1 Orang)</span>
-</div>
-<p class="text-[11px] text-stone-700 leading-relaxed">
-                Barakallahu lakuma wa baraka alaikuma wa jama'a bainakuma fii khair. Bahagia selalu saudaraku sampai akhir hayat!
-              </p>
-<span class="block text-[9px] text-stone-400 mt-1.5 italic">15 menit lalu</span>
-</div>
-<!-- Wish Card 3 -->
-<div class="bg-brand-ivory rounded-xl p-3.5 border border-stone-200 shadow-sm">
-<div class="flex items-center justify-between mb-1">
-<p class="text-xs font-bold text-brand-darkteal">Melati Maharani</p>
-<span class="text-[9px] bg-stone-100 text-stone-600 font-bold px-2 py-0.5 rounded-full">Berhalangan</span>
-</div>
-<p class="text-[11px] text-stone-700 leading-relaxed">
-                Selamat Nadya cantik &amp; Mas Raka! Mohon maaf sekali belum bisa hadir langsung ke Makassar, doa terbaik dipanjatkan dari Jakarta!
-              </p>
-<span class="block text-[9px] text-stone-400 mt-1.5 italic">1 jam lalu</span>
-</div>
+<div id="wishes-loading" class="text-center py-6 text-xs text-stone-400">
+<i class="fa-solid fa-circle-notch fa-spin mr-1"></i> Memuat ucapan...
+      </div>
 </div>
 </div>
 </section>
@@ -739,6 +727,12 @@
 </div>
 </main>
 </div>
+<!-- Supabase: config lokal + client JS (CDN) + logika RSVP -->
+<script src="supabase-config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="rsvp-part1.js"></script>
+<script src="rsvp-part2.js"></script>
+<script src="rsvp-part3.js"></script>
 <!-- BEGIN: Interactive Logic Scripts -->
 <script data-purpose="envelope-entrance-handler">
     // Read optional guest name from URL parameter, e.g. ?to=Bapak+Hadi
@@ -879,43 +873,7 @@
       showToast(`Mengunduh file: ${filename}`);
     }
   </script>
-<script data-purpose="guestbook-rsvp-handler">
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const name = document.getElementById("guest-name").value.trim();
-      const attendance = document.querySelector('input[name="attendance"]:checked').value;
-      const guestCount = document.getElementById("guest-count").value;
-      const message = document.getElementById("guest-message").value.trim();
-
-      if (!name || !message) return;
-
-      const container = document.getElementById("wishes-container");
-      const isHadir = attendance === "Hadir";
-
-      const newCard = document.createElement("div");
-      newCard.className = "bg-brand-ivory rounded-xl p-3.5 border border-brand-gold/40 shadow-sm animate-pulse-soft";
-      newCard.innerHTML = `
-        <div class="flex items-center justify-between mb-1">
-          <p class="text-xs font-bold text-brand-darkteal">${escapeHtml(name)}</p>
-          <span class="text-[9px] ${isHadir ? 'bg-emerald-100 text-emerald-800' : 'bg-stone-100 text-stone-600'} font-bold px-2 py-0.5 rounded-full">
-            ${isHadir ? `Hadir (${guestCount})` : 'Berhalangan'}
-          </span>
-        </div>
-        <p class="text-[11px] text-stone-700 leading-relaxed">${escapeHtml(message)}</p>
-        <span class="block text-[9px] text-stone-400 mt-1.5 italic">Baru saja</span>
-      `;
-
-      container.prepend(newCard);
-      document.getElementById("rsvp-form").reset();
-      showToast("Terima kasih atas doa & konfirmasi Anda!");
-    }
-
-    function escapeHtml(string) {
-      const div = document.createElement('div');
-      div.innerText = string;
-      return div.innerHTML;
-    }
-  </script>
+<!-- guestbook-rsvp-handler lama dipindah ke rsvp-part1/2/3.js (dinamis Supabase) -->
 <script data-purpose="bottom-nav-autoscroll">
     // Aktif: highlight menu sesuai posisi scroll + Auto Scroll putar halaman otomatis
     let autoScrollTimer = null;
