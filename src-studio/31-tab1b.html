@@ -1,0 +1,60 @@
+              <!-- Audio & Ambient Music Engine -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">music_note</span>
+                    <span class="font-title-md text-title-md text-on-surface">Pengaturan Musik Latar (Archipelago Acoustic)</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Auto-play saat amplop dibuka</span>
+                    <input checked id="autoplayMusic" class="w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox"/>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm items-center">
+                  <div class="sm:col-span-2">
+                    <select id="musicSelect" class="w-full bg-surface-container-low text-on-surface px-space-md py-2.5 rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40">
+                      <option selected="">Kahitna - Janji Suci (Instrumental Gamelan &amp; Harp)</option>
+                      <option>Yovie &amp; Nuno - Menjaga Hati (Acoustic Strings)</option>
+                      <option>Glenn Fredly - Kisah Romantis (Piano Melayu Solo)</option>
+                      <option>Payung Teduh - Akad (Cello &amp; Suling Harmony)</option>
+                      <option value="custom">Unggah Lagu Sendiri (.MP3 Maks. 8MB)...</option>
+                    </select>
+                  </div>
+                  <div class="flex items-center gap-space-xs bg-surface-container-low px-3 py-2 rounded-lg">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant">volume_up</span>
+                    <input class="w-full accent-primary cursor-pointer" id="volumeSlider" max="100" min="0" type="range" value="80"/>
+                    <span class="font-body-sm text-body-sm font-semibold text-on-surface" id="volumeLabel">80%</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Cover Photo Upload & Framer (Ratio 9:16) -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">image</span>
+                    <span class="font-title-md text-title-md text-on-surface">Foto Sampul Depan (Arch Portal Aspect 9:16)</span>
+                  </div>
+                  <span class="text-tertiary text-[11px] font-bold uppercase tracking-wider">Format Utama: Portrait</span>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-space-md p-space-md rounded-xl bg-surface-container-low">
+                  <div class="w-24 h-36 rounded-lg overflow-hidden relative shadow-md flex-shrink-0">
+                    <img id="coverThumb" class="w-full h-full object-cover" src="assets/couple.jpg" alt="Sampul Undangan"/>
+                  </div>
+                  <div class="flex-1 flex flex-col gap-2">
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Unggah foto beresolusi tinggi (minimal 1080x1920) untuk hasil terbaik pada kanal tamu.</p>
+                    <div class="flex flex-wrap items-center gap-2">
+                      <label class="px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-bold transition-all cursor-pointer inline-flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-[18px]">upload</span>
+                        <span>Unggah Foto</span>
+                        <input id="coverUpload" class="hidden" type="file" accept="image/*"/>
+                      </label>
+                      <button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-all" type="button" id="coverResetBtn">
+                        <span class="material-symbols-outlined text-[16px]">restart_alt</span>
+                        <span class="ml-1">Kembalikan Default</span>
+                      </button>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant">Aktif: <span id="coverFileName">assets/couple.jpg</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>

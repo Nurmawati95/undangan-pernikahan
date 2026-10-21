@@ -1,0 +1,66 @@
+          </div>
+          <!-- Right Live Mobile Canvas Preview Column (~35% width) -->
+          <div class="xl:col-span-4 sticky top-20 flex flex-col items-center">
+            <!-- Preview Mode Switcher -->
+            <div class="w-full max-w-[370px] flex items-center justify-between mb-3 px-1">
+              <div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+                <button class="px-3 py-1 rounded-md text-[11px] font-bold uppercase transition-all bg-primary-container text-on-primary-container" id="viewCoverBtn" type="button">Cover</button>
+                <button class="px-3 py-1 rounded-md text-[11px] font-bold uppercase text-on-surface-variant hover:text-on-surface transition-all" id="viewMainBtn" type="button">Isi Undangan</button>
+              </div>
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary animate-spin">autorenew</span>
+                <span class="font-label-gold text-[10px] uppercase">Live Sync</span>
+              </div>
+            </div>
+            <!-- Smartphone Device Mockup Shell -->
+            <div class="w-full max-w-[370px] bg-inverse-surface p-3 rounded-[40px] shadow-2xl relative">
+              <div class="absolute top-5 left-1/2 -translate-x-1/2 w-24 h-4 bg-inverse-surface rounded-full z-30 flex items-center justify-end px-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#181311]/90"></div>
+              </div>
+              <!-- Phone Inner Screen Display -->
+              <div class="w-full bg-[#FAF6F2] rounded-[32px] overflow-hidden flex flex-col relative aspect-[9/18.5] text-on-surface shadow-inner select-none" id="phoneScreen">
+                <!-- Background Atmospheric Visual with Arch Framing -->
+                <div class="relative w-full h-[58%] overflow-hidden" id="previewCoverWrap">
+                  <img class="w-full h-full object-cover scale-105" id="previewCoverImg" src="assets/couple.jpg" alt="Sampul pasangan"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#FAF6F2] via-[#FAF6F2]/30 to-transparent"></div>
+                  <div class="absolute top-8 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary shadow-md animate-[spin_8s_linear_infinite]">
+                    <span class="material-symbols-outlined text-[16px]">music_note</span>
+                  </div>
+                  <div class="absolute top-10 left-0 right-0 text-center">
+                    <span class="px-3 py-0.5 rounded-full bg-surface-container-lowest/70 backdrop-blur-md font-label-gold text-[9px] uppercase tracking-widest text-tertiary">The Wedding Of</span>
+                  </div>
+                </div>
+                <!-- Bottom Typography & Invitee Card Overlay -->
+                <div class="relative -mt-14 px-4 flex flex-col items-center text-center flex-1 pb-4">
+                  <h3 class="font-headline-md text-[26px] leading-tight text-on-surface" id="previewCoupleNames">Raka &amp; Nadya</h3>
+                  <p class="font-label-gold text-[10px] text-tertiary uppercase tracking-widest mt-1" id="previewEventDate">Sabtu, 24 Oktober 2026</p>
+                  <div class="mt-3 w-full bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-2xl shadow-sm flex flex-col items-center gap-1 border border-tertiary/20">
+                    <span class="font-body-sm text-[11px] text-on-surface-variant">Kepada Yth. Bapak/Ibu/Saudara/i:</span>
+                    <span class="font-body-md text-[13px] font-bold text-on-surface line-clamp-1" id="previewGuestDisplay">Bapak Budi Santoso &amp; Keluarga</span>
+                    <span class="text-[9px] text-tertiary italic" id="previewVenue">The Glasshouse, Jakarta</span>
+                  </div>
+                  <button class="mt-3.5 w-full py-2.5 rounded-xl bg-primary text-on-primary font-body-sm text-[12px] font-bold shadow-md shadow-primary/30 flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" type="button" id="previewOpenBtn">
+                    <span class="material-symbols-outlined text-[16px]">mail_outline</span>
+                    <span>Buka Undangan</span>
+                  </button>
+                  <div class="grid grid-cols-3 gap-1.5 w-full mt-3">
+                    <div class="bg-surface-container-lowest/70 rounded-lg py-1 flex flex-col items-center">
+                      <span class="font-headline-sm text-[14px] leading-tight font-bold text-on-surface" id="cdDays">12</span>
+                      <span class="font-label-gold text-[8px] uppercase text-on-surface-variant">Hari</span>
+                    </div>
+                    <div class="bg-surface-container-lowest/70 rounded-lg py-1 flex flex-col items-center">
+                      <span class="font-headline-sm text-[14px] leading-tight font-bold text-on-surface" id="cdHours">08</span>
+                      <span class="font-label-gold text-[8px] uppercase text-on-surface-variant">Jam</span>
+                    </div>
+                    <div class="bg-surface-container-lowest/70 rounded-lg py-1 flex flex-col items-center">
+                      <span class="font-headline-sm text-[14px] leading-tight font-bold text-on-surface" id="cdMinutes">45</span>
+                      <span class="font-label-gold text-[8px] uppercase text-on-surface-variant">Menit</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute bottom-1 left-1/2 -translate-x-1/2 w-28 h-1 bg-on-surface-variant/30 rounded-full"></div>
+              </div>
+            </div>
+            <p class="font-body-sm text-[11px] text-on-surface-variant text-center mt-3 max-w-[320px]">Tampilan simulasi di layar ponsel tamu undangan. Pratinjau langsung diperbarui sesuai teks dan foto di samping.</p>
+          </div>
+        </div>

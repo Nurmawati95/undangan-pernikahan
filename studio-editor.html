@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","primary-fixed":"#ffd9e3","secondary":"#016972","primary-fixed-dim":"#ffb0cb","tertiary-fixed-dim":"#e9c349","surface-container-high":"#f2e6e0","on-tertiary-container":"#4e3d00","on-secondary-container":"#116f78","secondary-fixed-dim":"#85d3dd","inverse-surface":"#362f2c","on-primary":"#ffffff","surface-container-low":"#fef1eb","surface-container-lowest":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#a1effa","error":"#ba1a1a","on-tertiary-fixed-variant":"#574500","inverse-on-surface":"#fbeee9","on-background":"#201a17","surface-tint":"#b80069","on-primary-container":"#fffbff","on-secondary-fixed-variant":"#004f56","on-primary-fixed-variant":"#8d004f","on-error":"#ffffff","on-surface-variant":"#594048","on-tertiary-fixed":"#241a00","tertiary-container":"#cca72f","outline-variant":"#e1bdc7","surface":"#fff8f6","surface-variant":"#ede0db","secondary-container":"#a1effa","surface-container-highest":"#ede0db","tertiary":"#735c00","surface-bright":"#fff8f6","surface-dim":"#e4d7d2","surface-container":"#f8ebe6","primary-container":"#dc1b81","primary":"#b40066","background":"#fff8f6","error-container":"#ffdad6","on-secondary-fixed":"#001f23","tertiary-fixed":"#ffe088","outline":"#8d6f78","on-surface":"#201a17","on-tertiary":"#ffffff","inverse-primary":"#ffb0cb","on-primary-fixed":"#3e0020"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-desktop":"1.5rem","space-md":"1rem","margin-desktop":"3rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-tablet":"2rem",margin:"1.25rem","space-sm":"0.5rem",gutter:"1rem","space-xs":"0.25rem"},fontFamily:{"body-sm":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"label-gold":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"headline-lg":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"display-hero":["Playfair Display"],"script-accent":["Playfair Display"],"title-md":["Plus Jakarta Sans"],"display-hero-mobile":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-lg":["Plus Jakarta Sans"]},fontSize:{"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"600"}],"label-gold":["11px",{lineHeight:"16px",letterSpacing:"0.18em",fontWeight:"700"}],"headline-sm":["22px",{lineHeight:"30px",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"52px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"display-hero":["56px",{lineHeight:"68px",letterSpacing:"-0.02em",fontWeight:"400"}],"script-accent":["24px",{lineHeight:"32px",letterSpacing:"0.04em",fontWeight:"400"}],"title-md":["18px",{lineHeight:"26px",letterSpacing:"0.01em",fontWeight:"600"}],"display-hero-mobile":["38px",{lineHeight:"48px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"38px",letterSpacing:"0em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}]}}}};</script>
+<title>Studio Editor Undangan &middot; UNDIGITAL</title>
+<link href="assets/logo-undigital.png" rel="icon" type="image/png"/>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<div class="min-h-screen flex">
+  <!-- Sidebar UNDIGITAL -->
+  <aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg px-space-lg hidden lg:flex">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center gap-space-sm px-space-xs">
+        <img src="assets/logo-undigital.png" alt="UNDIGITAL Logo" class="w-10 h-10 rounded-full object-cover shadow-[0_8px_24px_-4px_rgba(1,105,114,0.3)]"/>
+        <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight block">UNDIGITAL</span>
+      </div>
+      <div class="h-[1px] w-full bg-surface-container-high"></div>
+      <nav class="flex flex-col gap-space-xs">
+        <span class="font-label-gold text-label-gold text-on-surface-variant uppercase px-space-xs mb-space-xs">Navigasi Studio</span>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" href="dashboard.html">
+          <span class="material-symbols-outlined text-[20px]">dashboard</span>
+          <span class="font-body-md text-body-md">Dashboard</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" href="dashboard.html#studio-editor-section">
+          <span class="material-symbols-outlined text-[20px]">favorite</span>
+          <span class="font-body-md text-body-md">Manajemen Acara</span>
+        </a>
+        <a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-semibold transition-all" href="studio-editor.html">
+          <span class="material-symbols-outlined text-[20px]">draw</span>
+          <span class="font-body-md text-body-md">Editor Undangan</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" href="galeri.html">
+          <span class="material-symbols-outlined text-[20px]">style</span>
+          <span class="font-body-md text-body-md">Katalog Tema Adat</span>
+        </a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-space-sm px-space-xs py-space-xs rounded-xl bg-surface-container-low">
+      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+        <span class="material-symbols-outlined text-[18px] text-on-primary">person</span>
+      </div>
+      <div class="min-w-0">
+        <span class="font-body-sm text-body-sm font-semibold text-on-surface block truncate">Admin UNDIGITAL</span>
+        <span class="font-body-sm text-[11px] text-on-surface-variant block truncate">Cloud Studio</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="flex-1 lg:pl-60 min-w-0">
+    <!-- Topbar -->
+    <header class="sticky top-0 z-40 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-gutter-desktop">
+      <div class="flex items-center gap-space-sm min-w-0">
+        <img src="assets/logo-undigital.png" alt="UNDIGITAL" class="w-8 h-8 rounded-full object-cover lg:hidden"/>
+        <span class="font-headline-sm text-[18px] font-bold text-on-surface">Studio Editor</span>
+        <span class="font-label-gold text-[10px] uppercase text-tertiary hidden sm:inline">UNDIGITAL Cloud Studio</span>
+      </div>
+      <a class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-lowest border border-outline-variant/40 text-on-surface text-[12px] font-semibold hover:bg-surface-container-high transition-all" href="dashboard.html">
+        <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+        <span class="hidden sm:inline">Kembali ke Dashboard</span>
+      </a>
+    </header>
+
+    <main class="relative bg-surface w-full px-gutter-desktop pt-space-lg pb-16">
+      <div class="flex flex-col w-full max-w-[1500px] mx-auto">
+
+        <!-- Top Action & Context Header -->
+        <div class="flex flex-col gap-space-sm pt-4 pb-6">
+          <div class="flex flex-wrap items-center justify-between gap-space-sm">
+            <div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+              <a href="dashboard.html" class="hover:text-primary transition-colors">Studio UNDIGITAL</a>
+              <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+              <a href="dashboard.html#studio-editor-section" class="hover:text-primary transition-colors">Manajemen Acara</a>
+              <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+              <span class="font-semibold text-primary">Editor Undangan: Raka &amp; Nadya</span>
+            </div>
+            <div class="flex items-center gap-space-md">
+              <div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+                <span class="material-symbols-outlined text-[15px] text-secondary">cloud_done</span>
+                <span class="font-label-gold text-[10px] uppercase text-on-surface-variant">Tersimpan otomatis</span>
+              </div>
+              <div class="flex items-center gap-2 px-space-sm py-1 rounded-full bg-secondary-container">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                <span class="font-label-gold text-[10px] uppercase text-on-secondary-container">Status: Terpublikasi (Live)</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mt-1">
+            <div>
+              <h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Studio Editor Undangan: Raka &amp; Nadya</h1>
+              <p class="font-body-md text-body-md text-on-surface-variant">Sesuaikan tipografi, ornamen adat, musik, dan personalisasi tautan tamu secara langsung.</p>
+            </div>
+            <div class="flex items-center gap-space-sm flex-wrap">
+              <button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high transition-all font-body-sm text-body-sm font-semibold" type="button" id="previewFullBtn">
+                <span class="material-symbols-outlined text-[18px] text-tertiary">open_in_new</span>
+                <span>Pratinjau Layar Penuh</span>
+              </button>
+              <button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high transition-all font-body-sm text-body-sm font-semibold" id="copyPublicLinkBtn" type="button">
+                <span class="material-symbols-outlined text-[18px] text-secondary">share</span>
+                <span>Salin Tautan Publik</span>
+              </button>
+              <button class="flex items-center gap-2 px-space-lg py-2.5 rounded-lg bg-primary text-on-primary shadow-md hover:bg-primary-container transition-all font-body-sm text-body-sm font-bold shadow-primary/25" type="button" id="publishBtn">
+                <span class="material-symbols-outlined text-[18px]">publish</span>
+                <span>Simpan &amp; Publikasikan</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Split Canvas: 65% Form Studio / 35% Live Mobile Viewport -->
+        <div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start">
+          <!-- Left Configuration Studio Panel (~65% width) -->
+          <div class="xl:col-span-8 flex flex-col gap-space-lg">
+            <!-- Elegant Arching Multi-Tab Ribbon (sticky di bawah topbar agar selalu bisa diklik) -->
+            <div class="sticky top-16 z-30 -mx-1 px-1 py-1 bg-surface/90 backdrop-blur-xl">
+              <div class="bg-surface-container-lowest p-1.5 rounded-xl shadow-sm overflow-x-auto flex items-center gap-1" id="studio-ribbon">
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-semibold font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="1">
+                <span class="w-5 h-5 rounded-full bg-primary text-on-primary text-[11px] flex items-center justify-center font-bold">1</span>
+                <span>Info &amp; Sampul</span>
+              </button>
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="2">
+                <span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant text-[11px] flex items-center justify-center font-bold">2</span>
+                <span>Profil Mempelai</span>
+              </button>
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="3">
+                <span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant text-[11px] flex items-center justify-center font-bold">3</span>
+                <span>Jadwal &amp; Peta</span>
+              </button>
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="4">
+                <span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant text-[11px] flex items-center justify-center font-bold">4</span>
+                <span>Galeri Foto</span>
+              </button>
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="5">
+                <span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant text-[11px] flex items-center justify-center font-bold">5</span>
+                <span>Kisah Cinta</span>
+              </button>
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="6">
+                <span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant text-[11px] flex items-center justify-center font-bold">6</span>
+                <span>Hadiah Digital</span>
+              </button>
+              <button class="studio-tab flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-sm text-body-sm transition-all whitespace-nowrap" type="button" data-tab="7">
+                <span class="w-5 h-5 rounded-full bg-surface-container text-on-surface-variant text-[11px] flex items-center justify-center font-bold">7</span>
+                <span>Pengaturan &amp; Doa</span>
+              </button>
+              </div>
+            </div>
+
+            <!-- ============ TAB 1: INFO & SAMPUL ============ -->
+            <div class="studio-panel flex flex-col gap-space-lg" id="panel-1">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+                      <span class="material-symbols-outlined text-[20px]">auto_stories</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Informasi Pokok &amp; Tampilan Sampul</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Konfigurasi alamat situs kustom, notifikasi instan WhatsApp, dan media audio.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 01 / 07</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                  <div class="md:col-span-2 flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface flex items-center justify-between" for="eventNameInput">
+                      <span>Nama Lengkap Acara Pernikahan</span>
+                      <span class="text-on-surface-variant text-[11px]"><span id="eventNameCount">45</span>/90 Karakter</span>
+                    </label>
+                    <div class="relative">
+                      <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all" id="eventNameInput" type="text" maxlength="90" value="Walimatul 'Ursy Raka Daniswara &amp; Nadya Maharani"/>
+                      <span class="material-symbols-outlined absolute right-3 top-2.5 text-[20px] text-secondary">verified</span>
+                    </div>
+                  </div>
+                  <div class="md:col-span-2 flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="slugInput">Custom Slug &amp; Tautan Domain Undangan</label>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                      <div class="flex items-center bg-surface-container-low px-3 py-2.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm flex-shrink-0">
+                        <span class="material-symbols-outlined text-[16px] mr-1.5 text-secondary">link</span>
+                        <span>matrimony.id/undangan/</span>
+                      </div>
+                      <div class="relative flex-1">
+                        <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="slugInput" type="text" value="raka-nadya"/>
+                        <span class="absolute right-3 top-2.5 text-secondary text-[12px] font-semibold flex items-center gap-1" id="slugStatus">
+                          <span class="material-symbols-outlined text-[15px]">check_circle</span>
+                          <span>Tersedia</span>
+                        </span>
+                      </div>
+                      <button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-all" type="button" id="checkSlugBtn">
+                        Cek Ketersediaan
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface flex items-center gap-1.5" for="panitiaPhoneInput">
+                      <span>Nomor WhatsApp Panitia / RSVP</span>
+                      <span class="material-symbols-outlined text-[15px] text-on-surface-variant" title="Konfirmasi kehadiran tamu akan otomatis diteruskan ke nomor ini">help_outline</span>
+                    </label>
+                    <div class="relative">
+                      <span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">chat</span>
+                      <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="panitiaPhoneInput" type="text" value="+62 812-3456-7890"/>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant">Notifikasi RSVP tamu otomatis diteruskan ke kontak panitia ini.</span>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="eventDateInput">Tanggal Utama Akad &amp; Resepsi</label>
+                    <div class="relative">
+                      <span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">calendar_month</span>
+                      <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="eventDateInput" type="date" value="2026-10-24"/>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant">Hitung mundur otomatis disinkronkan ke tanggal ini.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Audio & Ambient Music Engine -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">music_note</span>
+                    <span class="font-title-md text-title-md text-on-surface">Pengaturan Musik Latar (Archipelago Acoustic)</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Auto-play saat amplop dibuka</span>
+                    <input checked id="autoplayMusic" class="w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox"/>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm items-center">
+                  <div class="sm:col-span-2">
+                    <select id="musicSelect" class="w-full bg-surface-container-low text-on-surface px-space-md py-2.5 rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40">
+                      <option selected="">Kahitna - Janji Suci (Instrumental Gamelan &amp; Harp)</option>
+                      <option>Yovie &amp; Nuno - Menjaga Hati (Acoustic Strings)</option>
+                      <option>Glenn Fredly - Kisah Romantis (Piano Melayu Solo)</option>
+                      <option>Payung Teduh - Akad (Cello &amp; Suling Harmony)</option>
+                      <option value="custom">Unggah Lagu Sendiri (.MP3 Maks. 8MB)...</option>
+                    </select>
+                  </div>
+                  <div class="flex items-center gap-space-xs bg-surface-container-low px-3 py-2 rounded-lg">
+                    <span class="material-symbols-outlined text-[18px] text-on-surface-variant">volume_up</span>
+                    <input class="w-full accent-primary cursor-pointer" id="volumeSlider" max="100" min="0" type="range" value="80"/>
+                    <span class="font-body-sm text-body-sm font-semibold text-on-surface" id="volumeLabel">80%</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Cover Photo Upload & Framer (Ratio 9:16) -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-[22px]">image</span>
+                    <span class="font-title-md text-title-md text-on-surface">Foto Sampul Depan (Arch Portal Aspect 9:16)</span>
+                  </div>
+                  <span class="text-tertiary text-[11px] font-bold uppercase tracking-wider">Format Utama: Portrait</span>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-space-md p-space-md rounded-xl bg-surface-container-low">
+                  <div class="w-24 h-36 rounded-lg overflow-hidden relative shadow-md flex-shrink-0">
+                    <img id="coverThumb" class="w-full h-full object-cover" src="assets/couple.jpg" alt="Sampul Undangan"/>
+                  </div>
+                  <div class="flex-1 flex flex-col gap-2">
+                    <p class="font-body-sm text-body-sm text-on-surface-variant">Unggah foto beresolusi tinggi (minimal 1080x1920) untuk hasil terbaik pada kanal tamu.</p>
+                    <div class="flex flex-wrap items-center gap-2">
+                      <label class="px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-bold transition-all cursor-pointer inline-flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-[18px]">upload</span>
+                        <span>Unggah Foto</span>
+                        <input id="coverUpload" class="hidden" type="file" accept="image/*"/>
+                      </label>
+                      <button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-all" type="button" id="coverResetBtn">
+                        <span class="material-symbols-outlined text-[16px]">restart_alt</span>
+                        <span class="ml-1">Kembalikan Default</span>
+                      </button>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant">Aktif: <span id="coverFileName">assets/couple.jpg</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ TAB 2: PROFIL MEMPELAI ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-2">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[20px]">person_add</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Generator Tautan Personalisasi Tamu (WhatsApp)</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Ketik nama tamu undangan, peroleh tautan unik (?kpd=) dan sebar langsung via WhatsApp.</p>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-gold text-[10px] uppercase">Fitur Favorit</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-end">
+                  <div class="md:col-span-7 flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="guestNameField">Nama Tamu Undangan / Gelar Keluarga</label>
+                    <div class="relative">
+                      <span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-on-surface-variant">badge</span>
+                      <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40" id="guestNameField" type="text" value="Bapak Budi Santoso &amp; Keluarga"/>
+                    </div>
+                  </div>
+                  <div class="md:col-span-5 flex items-center gap-2">
+                    <button class="flex-1 px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-all flex items-center justify-center gap-1.5" id="copyGuestUrlBtn" type="button">
+                      <span class="material-symbols-outlined text-[18px] text-secondary">content_copy</span>
+                      <span>Salin Link Tamu</span>
+                    </button>
+                    <button class="flex-1 px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-body-sm text-body-sm font-bold transition-all flex items-center justify-center gap-1.5 shadow-md" id="sendWaDirectBtn" type="button">
+                      <span class="material-symbols-outlined text-[18px]">send</span>
+                      <span>Kirim WhatsApp</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+                  <div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span class="font-semibold text-secondary">Tautan Publik Khusus Tamu Terbentuk:</span>
+                    <span class="text-tertiary">Parameter Terenkripsi UTF-8</span>
+                  </div>
+                  <div class="bg-surface-container-lowest p-2.5 rounded-lg font-mono text-[12px] text-on-surface truncate select-all" id="guestUrlPreview">https://matrimony.id/undangan/raka-nadya?kpd=Bapak+Budi+Santoso+%26+Keluarga</div>
+                  <div class="flex flex-col gap-1.5 mt-2">
+                    <div class="flex items-center justify-between">
+                      <span class="font-body-sm text-body-sm font-semibold text-on-surface">Template Pesan Pengantar WhatsApp</span>
+                      <button class="text-primary font-body-sm text-[12px] hover:underline font-semibold" type="button" id="resetWaTemplateBtn">Kembalikan ke Default</button>
+                    </div>
+                    <textarea class="w-full bg-surface-container-lowest p-space-sm rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/40" id="waMessageField" rows="4"></textarea>
+                    <div class="flex items-center justify-between mt-1">
+                      <span class="text-tertiary font-body-sm text-[11px]">Variabel: &#123;&#123;nama&#125;&#125;, &#123;&#123;tanggal&#125;&#125;, &#123;&#123;waktu&#125;&#125;, &#123;&#123;tempat&#125;&#125;, &#123;&#123;tautan&#125;&#125;</span>
+                      <span class="text-tertiary font-body-sm text-[11px]"><span id="waCharCount">0</span>/1000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profil & Silsilah Kedua Mempelai -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+                      <span class="material-symbols-outlined text-[18px]">favorite</span>
+                    </div>
+                    <span class="font-title-md text-title-md text-on-surface">Profil &amp; Silsilah Kedua Mempelai</span>
+                  </div>
+                  <span class="px-2 py-0.5 rounded text-[11px] bg-secondary-container text-on-secondary-container font-semibold">Lengkap (2/2)</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-2">
+                  <div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+                    <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 shadow-sm">
+                      <img class="w-full h-full object-cover" id="groomThumb" src="assets/groom.jpg" alt="Foto groom"/>
+                    </div>
+                    <div class="flex flex-col min-w-0 flex-1">
+                      <input class="bg-transparent font-body-md text-body-md font-bold text-on-surface truncate focus:outline-none focus:ring-1 focus:ring-primary/40 rounded px-1 -mx-1" id="groomNameInput" type="text" value="R. Daniswara Pratama, S.T."/>
+                      <input class="bg-transparent font-body-sm text-[12px] text-on-surface-variant truncate focus:outline-none focus:ring-1 focus:ring-primary/40 rounded px-1 -mx-1" id="groomParentInput" type="text" value="Putra dari Bpk. Ir. Danang &amp; Ibu Sri"/>
+                      <input class="bg-transparent text-secondary text-[11px] font-semibold mt-0.5 focus:outline-none focus:ring-1 focus:ring-primary/40 rounded px-1 -mx-1" id="groomIgInput" type="text" value="@rakadanis"/>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low">
+                    <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 shadow-sm">
+                      <img class="w-full h-full object-cover" id="brideThumb" src="assets/bride.jpg" alt="Foto bride"/>
+                    </div>
+                    <div class="flex flex-col min-w-0 flex-1">
+                      <input class="bg-transparent font-body-md text-body-md font-bold text-on-surface truncate focus:outline-none focus:ring-1 focus:ring-primary/40 rounded px-1 -mx-1" id="brideNameInput" type="text" value="Nadya Maharani, S.Ds."/>
+                      <input class="bg-transparent font-body-sm text-[12px] text-on-surface-variant truncate focus:outline-none focus:ring-1 focus:ring-primary/40 rounded px-1 -mx-1" id="brideParentInput" type="text" value="Putri dari Bpk. H. Bambang &amp; Ibu Ratna"/>
+                      <input class="bg-transparent text-primary text-[11px] font-semibold mt-0.5 focus:outline-none focus:ring-1 focus:ring-primary/40 rounded px-1 -mx-1" id="brideIgInput" type="text" value="@nadyamhrn"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+                  <label class="flex flex-col gap-1.5">
+                    <span class="font-body-sm text-body-sm font-semibold text-on-surface">Nama Pasangan (Preview)</span>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="coupleNamesInput" type="text" value="Raka &amp; Nadya"/>
+                  </label>
+                  <label class="flex flex-col gap-1.5">
+                    <span class="font-body-sm text-body-sm font-semibold text-on-surface">Nama Pendingin (Ditampilkan di Undangan)</span>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="pendinginInput" type="text" value="Raka &amp; Nadya"/>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ TAB 3: JADWAL & PETA ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-3">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+                      <span class="material-symbols-outlined text-[20px]">place</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Lokasi Acara, Peta Digital &amp; Buku Tamu RSVP</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Atur titik lokasi dan urutan acara agar tamu tidak salah navigate.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 03 / 07</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="venueNameInput">Nama Lokasi / Gedung</label>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="venueNameInput" type="text" value="The Glasshouse, Jakarta"/>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="venueAddressInput">Alamat Lengkap</label>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="venueAddressInput" type="text" value="Jl. Integrator No. 8, Jakarta Selatan"/>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="akadTimeInput">Waktu Akad Nikah</label>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="akadTimeInput" type="text" value="09:00 - 10:30 WIB"/>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="resepsiTimeInput">Waktu Resepsi</label>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="resepsiTimeInput" type="text" value="11:30 - 14:00 WIB"/>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="mapUrlInput">Tautan Google Maps (Atau Alamat untuk Pencarian)</label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">map</span>
+                    <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="mapUrlInput" type="text" value="https://maps.google.com/?q=The+Glasshouse+Jakarta"/>
+                  </div>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-outline-variant/40 bg-surface-container-low">
+                  <div class="h-40 flex items-center justify-center gap-3 text-on-surface-variant">
+                    <span class="material-symbols-outlined text-[26px] text-secondary">map</span>
+                    <span class="font-body-sm text-body-sm">Pratinjau Peta Digital</span>
+                  </div>
+                  <div class="p-3 flex flex-wrap gap-2 border-t border-outline-variant/30">
+                    <a id="openMapBtn" class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold inline-flex items-center gap-1.5" href="https://maps.google.com/?q=The+Glasshouse+Jakarta" target="_blank" rel="noopener">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span><span>Buka Peta</span>
+                    </a>
+                    <button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold" type="button" id="copyMapBtn">
+                      <span class="material-symbols-outlined text-[16px]">content_copy</span><span class="ml-1">Salin Tautan</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Acara -->
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+                      <span class="material-symbols-outlined text-[18px]">timeline</span>
+                    </div>
+                    <span class="font-title-md text-title-md text-on-surface">Rangkaian Agenda Hari Pernikahan</span>
+                  </div>
+                  <button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-[12px] font-semibold" type="button" id="addAgendaBtn">
+                    <span class="material-symbols-outlined text-[14px]">add</span><span class="ml-1">Tambah Agenda</span>
+                  </button>
+                </div>
+                <div class="flex flex-col gap-2" id="agendaList"></div>
+              </div>
+            </div>
+
+            <!-- ============ TAB 4: GALERI FOTO ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-4">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+                      <span class="material-symbols-outlined text-[20px]">photo_library</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Galeri Foto Romantis</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Unggah, urutkan, dan tandai foto unggulan untuk ditampilkan di galeri tamu.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 04 / 07</span>
+                </div>
+                <label class="p-8 border-2 border-dashed border-outline-variant/70 rounded-3xl bg-surface-container-low flex flex-col items-center justify-center text-center gap-3 cursor-pointer hover:bg-surface-container-high transition-colors">
+                  <div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[36px]">cloud_upload</span>
+                  </div>
+                  <div>
+                    <h4 class="font-title-md text-body-lg font-bold text-on-surface">Tarik &amp; Letakkan Foto Romantis Di Sini</h4>
+                    <p class="text-xs text-on-surface-variant">Mendukung JPG, WEBP, PNG hingga resolusi 4K (maks. 10MB per berkas)</p>
+                  </div>
+                  <span class="px-5 py-2 rounded-xl bg-secondary text-on-secondary text-xs font-semibold">Jelajahi Berkas Galeri</span>
+                  <input id="galleryUpload" class="hidden" type="file" accept="image/*" multiple/>
+                </label>
+                <div class="flex items-center justify-between pt-2">
+                  <h4 class="font-title-md text-title-md text-on-surface font-semibold">Foto Terunggah (<span id="galleryCount">6</span> Foto)</h4>
+                  <span class="text-xs text-on-surface-variant">Klik foto untuk menandai unggulan</span>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" id="galleryGrid"></div>
+              </div>
+            </div>
+
+            <!-- ============ TAB 5: KISHA CINTA ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-5">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[20px]">favorite</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Kisah Perjalanan Cinta</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Ceritakan kronologi(holder) Wa-Type yang memandu tamu mengikuti alur Undangan.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 05 / 07</span>
+                </div>
+                <div class="flex flex-col gap-3" id="storyList"></div>
+                <button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold self-start" type="button" id="addStoryBtn">
+                  <span class="material-symbols-outlined text-[16px]">add</span><span class="ml-1">Tambah Chapter</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- ============ TAB 6: HADIAH DIGITAL ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-6">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-tertiary/15 flex items-center justify-center text-tertiary">
+                      <span class="material-symbols-outlined text-[20px]">redeem</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Amplop Digital &amp; Angpao</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Kelola metode pembayaran, tampilan kado, dan rekap donasi real-time.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 06 / 07</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="giftAccountInput">Rekening / E-Wallet Tujuan</label>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="giftAccountInput" type="text" value="BSR 0123 4567 8901 a.n. Raka Daniswara"/>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="giftMinInput">Nominal Minimum Amplop</label>
+                    <input class="bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="giftMinInput" type="text" value="Rp 50.000"/>
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+                  <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+                    <span class="font-body-sm text-[13px] font-semibold text-on-surface">QRIS Statis</span>
+                    <input checked class="w-4 h-4 accent-primary rounded" type="checkbox"/>
+                  </label>
+                  <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+                    <span class="font-body-sm text-[13px] font-semibold text-on-surface">Transfer Bank</span>
+                    <input checked class="w-4 h-4 accent-primary rounded" type="checkbox"/>
+                  </label>
+                  <label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+                    <span class="font-body-sm text-[13px] font-semibold text-on-surface">Donasi Mandiri</span>
+                    <input class="w-4 h-4 accent-primary rounded" type="checkbox"/>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ TAB 7: PENGATURAN & DOA ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-7">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+                      <span class="material-symbols-outlined text-[20px]">settings</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Pengaturan Modul, Doa &amp; Pembukaan</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Tentukan modul aktif dan kurasi doa untuk tamu.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 07 / 07</span>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm" id="moduleToggles"></div>
+              </div>
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+                    <span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+                  </div>
+                  <span class="font-title-md text-title-md text-on-surface">Doa &amp; Ucapan untuk Kedua Mempelai</span>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="prayerInput">Teks Doa Ucapan</label>
+                  <textarea class="w-full bg-surface-container-lowest p-space-sm rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/40" id="prayerInput" rows="3">Semoga kalian selalu berbahagia dalam cinta, rukun, dan dilimpahi keberkahan.</textarea>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                  <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="closingMessageInput">Pesan Penutup (Tamu)</label>
+                  <textarea class="w-full bg-surface-container-lowest p-space-sm rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/40" id="closingMessageInput" rows="2">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila berkenan hadir serta memberikan doa restu.</textarea>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Right Live Mobile Canvas Preview Column (~35% width) -->
+          <div class="xl:col-span-4 sticky top-20 flex flex-col items-center">
+            <!-- Preview Mode Switcher -->
+            <div class="w-full max-w-[370px] flex items-center justify-between mb-3 px-1">
+              <div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+                <button class="px-3 py-1 rounded-md text-[11px] font-bold uppercase transition-all bg-primary-container text-on-primary-container" id="viewCoverBtn" type="button">Cover</button>
+                <button class="px-3 py-1 rounded-md text-[11px] font-bold uppercase text-on-surface-variant hover:text-on-surface transition-all" id="viewMainBtn" type="button">Isi Undangan</button>
+              </div>
+              <div class="flex items-center gap-1.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px] text-secondary animate-spin">autorenew</span>
+                <span class="font-label-gold text-[10px] uppercase">Live Sync</span>
+              </div>
+            </div>
+            <!-- Smartphone Device Mockup Shell -->
+            <div class="w-full max-w-[370px] bg-inverse-surface p-3 rounded-[40px] shadow-2xl relative">
+              <div class="absolute top-5 left-1/2 -translate-x-1/2 w-24 h-4 bg-inverse-surface rounded-full z-30 flex items-center justify-end px-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#181311]/90"></div>
+              </div>
+              <!-- Phone Inner Screen Display -->
+              <div class="w-full bg-[#FAF6F2] rounded-[32px] overflow-hidden flex flex-col relative aspect-[9/18.5] text-on-surface shadow-inner select-none" id="phoneScreen">
+                <!-- Background Atmospheric Visual with Arch Framing -->
+                <div class="relative w-full h-[58%] overflow-hidden" id="previewCoverWrap">
+                  <img class="w-full h-full object-cover scale-105" id="previewCoverImg" src="assets/couple.jpg" alt="Sampul pasangan"/>
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#FAF6F2] via-[#FAF6F2]/30 to-transparent"></div>
+                  <div class="absolute top-8 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary shadow-md animate-[spin_8s_linear_infinite]">
+                    <span class="material-symbols-outlined text-[16px]">music_note</span>
+                  </div>
+                  <div class="absolute top-10 left-0 right-0 text-center">
+                    <span class="px-3 py-0.5 rounded-full bg-surface-container-lowest/70 backdrop-blur-md font-label-gold text-[9px] uppercase tracking-widest text-tertiary">The Wedding Of</span>
+                  </div>
+                </div>
+                <!-- Bottom Typography & Invitee Card Overlay -->
+                <div class="relative -mt-14 px-4 flex flex-col items-center text-center flex-1 pb-4">
+                  <h3 class="font-headline-md text-[26px] leading-tight text-on-surface" id="previewCoupleNames">Raka &amp; Nadya</h3>
+                  <p class="font-label-gold text-[10px] text-tertiary uppercase tracking-widest mt-1" id="previewEventDate">Sabtu, 24 Oktober 2026</p>
+                  <div class="mt-3 w-full bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-2xl shadow-sm flex flex-col items-center gap-1 border border-tertiary/20">
+                    <span class="font-body-sm text-[11px] text-on-surface-variant">Kepada Yth. Bapak/Ibu/Saudara/i:</span>
+                    <span class="font-body-md text-[13px] font-bold text-on-surface line-clamp-1" id="previewGuestDisplay">Bapak Budi Santoso &amp; Keluarga</span>
+                    <span class="text-[9px] text-tertiary italic" id="previewVenue">The Glasshouse, Jakarta</span>
+                  </div>
+                  <button class="mt-3.5 w-full py-2.5 rounded-xl bg-primary text-on-primary font-body-sm text-[12px] font-bold shadow-md shadow-primary/30 flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" type="button" id="previewOpenBtn">
+                    <span class="material-symbols-outlined text-[16px]">mail_outline</span>
+                    <span>Buka Undangan</span>
+                  </button>
+                  <div class="grid grid-cols-3 gap-1.5 w-full mt-3">
+                    <div class="bg-surface-container-lowest/70 rounded-lg py-1 flex flex-col items-center">
+                      <span class="font-headline-sm text-[14px] leading-tight font-bold text-on-surface" id="cdDays">12</span>
+                      <span class="font-label-gold text-[8px] uppercase text-on-surface-variant">Hari</span>
+                    </div>
+                    <div class="bg-surface-container-lowest/70 rounded-lg py-1 flex flex-col items-center">
+                      <span class="font-headline-sm text-[14px] leading-tight font-bold text-on-surface" id="cdHours">08</span>
+                      <span class="font-label-gold text-[8px] uppercase text-on-surface-variant">Jam</span>
+                    </div>
+                    <div class="bg-surface-container-lowest/70 rounded-lg py-1 flex flex-col items-center">
+                      <span class="font-headline-sm text-[14px] leading-tight font-bold text-on-surface" id="cdMinutes">45</span>
+                      <span class="font-label-gold text-[8px] uppercase text-on-surface-variant">Menit</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute bottom-1 left-1/2 -translate-x-1/2 w-28 h-1 bg-on-surface-variant/30 rounded-full"></div>
+              </div>
+            </div>
+            <p class="font-body-sm text-[11px] text-on-surface-variant text-center mt-3 max-w-[320px]">Tampilan simulasi di layar ponsel tamu undangan. Pratinjau langsung diperbarui sesuai teks dan foto di samping.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ===== Toast Notification System ===== -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col items-center gap-2 pointer-events-none" id="toastHost" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ===== Public Invitation Overlay (Preview Layar Penuh) ===== -->
+<div class="fixed inset-0 z-[90] hidden bg-black/70 backdrop-blur-sm items-center justify-center p-4" id="fullPreviewModal">
+  <div class="w-full max-w-[380px] max-h-[92vh] overflow-auto bg-surface-container-lowest rounded-[32px] shadow-2xl p-5 relative">
+    <button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-high hover:bg-surface-container flex items-center justify-center text-on-surface" id="closeFullPreviewBtn" type="button" aria-label="Tutup pratinjau">
+      <span class="material-symbols-outlined text-[18px]">close</span>
+    </button>
+    <div class="flex flex-col items-center text-center gap-2">
+      <span class="px-3 py-1 rounded-full bg-surface-container-low font-label-gold text-[10px] uppercase tracking-widest text-tertiary">The Wedding Of</span>
+      <h3 class="font-headline-md text-[28px] leading-tight text-on-surface" id="fullPreviewNames">Raka &amp; Nadya</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant" id="fullPreviewDate">Sabtu, 24 Oktober 2026</p>
+      <p class="font-body-sm text-body-sm text-tertiary italic" id="fullPreviewVenue">The Glasshouse, Jakarta</p>
+      <div class="w-full my-3 rounded-2xl bg-surface-container-low p-4 flex flex-col items-center gap-1">
+        <span class="font-body-sm text-[12px] text-on-surface-variant">Kepada Yth.</span>
+        <span class="font-body-md text-body-md font-bold text-on-surface" id="fullPreviewGuest">Bapak Budi Santoso &amp; Keluarga</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="fullPreviewPrayer"></p>
+      <a class="w-full mt-2 py-2.5 rounded-xl bg-secondary text-on-secondary font-body-sm text-body-sm font-bold text-center" id="fullPreviewWaBtn" href="#" target="_blank" rel="noopener">Buka di WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script src="studio-editor.js"></script>
+
+</body>
+</html>

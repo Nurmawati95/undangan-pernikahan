@@ -1,0 +1,53 @@
+            <!-- ============ TAB 2: PROFIL MEMPELAI ============ -->
+            <div class="studio-panel hidden flex flex-col gap-space-lg" id="panel-2">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                      <span class="material-symbols-outlined text-[20px]">person_add</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Generator Tautan Personalisasi Tamu (WhatsApp)</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Ketik nama tamu undangan, peroleh tautan unik (?kpd=) dan sebar langsung via WhatsApp.</p>
+                    </div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-gold text-[10px] uppercase">Fitur Favorit</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-end">
+                  <div class="md:col-span-7 flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="guestNameField">Nama Tamu Undangan / Gelar Keluarga</label>
+                    <div class="relative">
+                      <span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-on-surface-variant">badge</span>
+                      <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/40" id="guestNameField" type="text" value="Bapak Budi Santoso &amp; Keluarga"/>
+                    </div>
+                  </div>
+                  <div class="md:col-span-5 flex items-center gap-2">
+                    <button class="flex-1 px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-all flex items-center justify-center gap-1.5" id="copyGuestUrlBtn" type="button">
+                      <span class="material-symbols-outlined text-[18px] text-secondary">content_copy</span>
+                      <span>Salin Link Tamu</span>
+                    </button>
+                    <button class="flex-1 px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-body-sm text-body-sm font-bold transition-all flex items-center justify-center gap-1.5 shadow-md" id="sendWaDirectBtn" type="button">
+                      <span class="material-symbols-outlined text-[18px]">send</span>
+                      <span>Kirim WhatsApp</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+                  <div class="flex items-center justify-between text-[11px] text-on-surface-variant">
+                    <span class="font-semibold text-secondary">Tautan Publik Khusus Tamu Terbentuk:</span>
+                    <span class="text-tertiary">Parameter Terenkripsi UTF-8</span>
+                  </div>
+                  <div class="bg-surface-container-lowest p-2.5 rounded-lg font-mono text-[12px] text-on-surface truncate select-all" id="guestUrlPreview">https://matrimony.id/undangan/raka-nadya?kpd=Bapak+Budi+Santoso+%26+Keluarga</div>
+                  <div class="flex flex-col gap-1.5 mt-2">
+                    <div class="flex items-center justify-between">
+                      <span class="font-body-sm text-body-sm font-semibold text-on-surface">Template Pesan Pengantar WhatsApp</span>
+                      <button class="text-primary font-body-sm text-[12px] hover:underline font-semibold" type="button" id="resetWaTemplateBtn">Kembalikan ke Default</button>
+                    </div>
+                    <textarea class="w-full bg-surface-container-lowest p-space-sm rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/40" id="waMessageField" rows="4"></textarea>
+                    <div class="flex items-center justify-between mt-1">
+                      <span class="text-tertiary font-body-sm text-[11px]">Variabel: &#123;&#123;nama&#125;&#125;, &#123;&#123;tanggal&#125;&#125;, &#123;&#123;waktu&#125;&#125;, &#123;&#123;tempat&#125;&#125;, &#123;&#123;tautan&#125;&#125;</span>
+                      <span class="text-tertiary font-body-sm text-[11px]"><span id="waCharCount">0</span>/1000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>

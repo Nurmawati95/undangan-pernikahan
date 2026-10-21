@@ -1,0 +1,30 @@
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ===== Toast Notification System ===== -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col items-center gap-2 pointer-events-none" id="toastHost" aria-live="polite" aria-atomic="true"></div>
+
+<!-- ===== Public Invitation Overlay (Preview Layar Penuh) ===== -->
+<div class="fixed inset-0 z-[90] hidden bg-black/70 backdrop-blur-sm items-center justify-center p-4" id="fullPreviewModal">
+  <div class="w-full max-w-[380px] max-h-[92vh] overflow-auto bg-surface-container-lowest rounded-[32px] shadow-2xl p-5 relative">
+    <button class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-high hover:bg-surface-container flex items-center justify-center text-on-surface" id="closeFullPreviewBtn" type="button" aria-label="Tutup pratinjau">
+      <span class="material-symbols-outlined text-[18px]">close</span>
+    </button>
+    <div class="flex flex-col items-center text-center gap-2">
+      <span class="px-3 py-1 rounded-full bg-surface-container-low font-label-gold text-[10px] uppercase tracking-widest text-tertiary">The Wedding Of</span>
+      <h3 class="font-headline-md text-[28px] leading-tight text-on-surface" id="fullPreviewNames">Raka &amp; Nadya</h3>
+      <p class="font-body-sm text-body-sm text-on-surface-variant" id="fullPreviewDate">Sabtu, 24 Oktober 2026</p>
+      <p class="font-body-sm text-body-sm text-tertiary italic" id="fullPreviewVenue">The Glasshouse, Jakarta</p>
+      <div class="w-full my-3 rounded-2xl bg-surface-container-low p-4 flex flex-col items-center gap-1">
+        <span class="font-body-sm text-[12px] text-on-surface-variant">Kepada Yth.</span>
+        <span class="font-body-md text-body-md font-bold text-on-surface" id="fullPreviewGuest">Bapak Budi Santoso &amp; Keluarga</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="fullPreviewPrayer"></p>
+      <a class="w-full mt-2 py-2.5 rounded-xl bg-secondary text-on-secondary font-body-sm text-body-sm font-bold text-center" id="fullPreviewWaBtn" href="#" target="_blank" rel="noopener">Buka di WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script src="studio-editor.js"></script>

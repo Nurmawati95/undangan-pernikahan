@@ -1,0 +1,66 @@
+            <!-- ============ TAB 1: INFO & SAMPUL ============ -->
+            <div class="studio-panel flex flex-col gap-space-lg" id="panel-1">
+              <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+                <div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+                  <div class="flex items-center gap-space-sm">
+                    <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+                      <span class="material-symbols-outlined text-[20px]">auto_stories</span>
+                    </div>
+                    <div>
+                      <h2 class="font-title-md text-title-md text-on-surface">Informasi Pokok &amp; Tampilan Sampul</h2>
+                      <p class="font-body-sm text-body-sm text-on-surface-variant">Konfigurasi alamat situs kustom, notifikasi instan WhatsApp, dan media audio.</p>
+                    </div>
+                  </div>
+                  <span class="font-label-gold text-label-gold text-tertiary uppercase">Langkah 01 / 07</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                  <div class="md:col-span-2 flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface flex items-center justify-between" for="eventNameInput">
+                      <span>Nama Lengkap Acara Pernikahan</span>
+                      <span class="text-on-surface-variant text-[11px]"><span id="eventNameCount">45</span>/90 Karakter</span>
+                    </label>
+                    <div class="relative">
+                      <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all" id="eventNameInput" type="text" maxlength="90" value="Walimatul 'Ursy Raka Daniswara &amp; Nadya Maharani"/>
+                      <span class="material-symbols-outlined absolute right-3 top-2.5 text-[20px] text-secondary">verified</span>
+                    </div>
+                  </div>
+                  <div class="md:col-span-2 flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="slugInput">Custom Slug &amp; Tautan Domain Undangan</label>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                      <div class="flex items-center bg-surface-container-low px-3 py-2.5 rounded-lg text-on-surface-variant font-body-sm text-body-sm flex-shrink-0">
+                        <span class="material-symbols-outlined text-[16px] mr-1.5 text-secondary">link</span>
+                        <span>matrimony.id/undangan/</span>
+                      </div>
+                      <div class="relative flex-1">
+                        <input class="w-full bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="slugInput" type="text" value="raka-nadya"/>
+                        <span class="absolute right-3 top-2.5 text-secondary text-[12px] font-semibold flex items-center gap-1" id="slugStatus">
+                          <span class="material-symbols-outlined text-[15px]">check_circle</span>
+                          <span>Tersedia</span>
+                        </span>
+                      </div>
+                      <button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-body-sm text-body-sm font-semibold transition-all" type="button" id="checkSlugBtn">
+                        Cek Ketersediaan
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface flex items-center gap-1.5" for="panitiaPhoneInput">
+                      <span>Nomor WhatsApp Panitia / RSVP</span>
+                      <span class="material-symbols-outlined text-[15px] text-on-surface-variant" title="Konfirmasi kehadiran tamu akan otomatis diteruskan ke nomor ini">help_outline</span>
+                    </label>
+                    <div class="relative">
+                      <span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">chat</span>
+                      <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="panitiaPhoneInput" type="text" value="+62 812-3456-7890"/>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant">Notifikasi RSVP tamu otomatis diteruskan ke kontak panitia ini.</span>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-body-sm text-body-sm font-semibold text-on-surface" for="eventDateInput">Tanggal Utama Akad &amp; Resepsi</label>
+                    <div class="relative">
+                      <span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant">calendar_month</span>
+                      <input class="w-full bg-surface-container-low pl-10 pr-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary/40" id="eventDateInput" type="date" value="2026-10-24"/>
+                    </div>
+                    <span class="text-[11px] text-on-surface-variant">Hitung mundur otomatis disinkronkan ke tanggal ini.</span>
+                  </div>
+                </div>
+              </div>
