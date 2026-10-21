@@ -60,23 +60,30 @@ function dashFixGuestLinks() {
 
 window.addEventListener('DOMContentLoaded', function () {
   dashFixGuestLinks();
-  dashLoad();
-  if (dashSb) {
-    try {
-      dashSb.channel('dash_rsvp').on('postgres_changes',
-        { event: '*', schema: 'public', table: 'rsvp_wishes' },
-        function () { dashLoad(); }).subscribe();
-    } catch (e) { console.warn(e); }
-  }
-  if (typeof generateGuestLink === 'function') {
-    var origGen = generateGuestLink;
-    generateGuestLink = function () {
-      var nameEl = document.getElementById('guest-name-input');
-      var name = nameEl ? nameEl.value.trim() : 'Tamu Undangan';
-      var encoded = encodeURIComponent(name).replace(/%20/g, '+');
-      var full = window.location.origin + '/?to=' + encoded;
-      var o = document.getElementById('guest-link-output');
-      if (o) o.innerText = full;
-    };
+  var runWhenReady = function () {
+    dashLoad();
+    if (dashSb) {
+      try {
+        dashSb.channel('dash_rsvp').on('postgres_changes',
+          { event: '*', schema: 'public', table: 'rsvp_wishes' },
+          function () { dashLoad(); }).subscribe();
+      } catch (e) { console.warn(e); }
+    }
+    if (typeof generateGuestLink === 'function') {
+      var origGen = generateGuestLink;
+      generateGuestLink = function () {
+        var nameEl = document.getElementById('guest-name-input');
+        var name = nameEl ? nameEl.value.trim() : 'Tamu Undangan';
+        var encoded = encodeURIComponent(name).replace(/%20/g, '+');
+        var full = window.location.origin + '/?to=' + encoded;
+        var o = document.getElementById('guest-link-output');
+        if (o) o.innerText = full;
+      };
+    }
+  };
+  if (window.DashboardAuth && typeof window.DashboardAuth.onReady === 'function') {
+    window.DashboardAuth.onReady(runWhenReady);
+  } else {
+    runWhenReady();
   }
 });

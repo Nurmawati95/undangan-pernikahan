@@ -1,3 +1,47 @@
-# Tambahan .gitignore agar kunci tidak bocor
+# Dependensi Node (bisa di-install ulang dengan npm install)
+node_modules/
+.tmp-browser/
+
+# File sementara / log server
+.tmp-server.log
+.tmp-server.err
+.tmp-settings.json
+*.log
+
+# Rahasia & konfigurasi lokal
 .env
 .env.local
+.env.*.local
+
+# File uji/probe (berisi kunci/data uji)
+.tmp-browser/
+probe-*.js
+*-probe.js
+flash-probe.js
+
+# Skrip maintenance satu-kali (opsional, bisa dihapus dari repo)
+tmp-inspect.js
+check-dash.js
+check-structure.js
+fix-dashboard.js
+fix-images.js
+fix-js.js
+fix-prayer.js
+validate-studio.js
+build-studio-editor.js
+
+# Berkas desain/mockup berukuran besar (opsional)
+design/screen.png
+design/**/screen.png
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Output build
+dist/
+build/
+
