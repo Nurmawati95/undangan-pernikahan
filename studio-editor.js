@@ -139,9 +139,32 @@
   }
   window.studioSwitchTab = switchTab;
 
-  $$('.studio-tab').forEach((btn) => {
-    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
-  });
+  (function () {
+    const btn = event.currentTarget;
+    const tabs = $$('.studio-tab');
+    const panels = $$('.studio-panel');
+    const active = String(btn.dataset.tab);
+
+    tabs.forEach((t) => {
+      const isNow = t.dataset.tab === active;
+      applyClasses(t, isNow ? ACTIVE_TAB_CLASS : IDLE_TAB_CLASS);
+      const badge = t.querySelector('span:first-child');
+      if (badge) applyClasses(badge, isNow ? ACTIVE_BADGE : IDLE_BADGE);
+    });
+
+    panels.forEach((panel) => {
+      panel.classList.toggle('hidden', panel.id !== 'panel-' + active);
+    });
+
+    if (window.innerWidth < 1280) {
+      const ribbon = $('#studio-ribbon');
+      if (ribbon && ribbon.scrollWidth > ribbon.clientWidth) {
+        const activeBtn = tabs.find((t) => t.dataset.tab === active);
+        if (activeBtn) ribbon.scrollTo({ left: activeBtn.offsetLeft - 12, behavior: 'smooth' });
+      }
+    }
+    window.__ACTIVE_TAB__ = active;
+  })();
 
   /* =============================================================
      2. FORMATTING HELPERS
