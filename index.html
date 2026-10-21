@@ -127,6 +127,18 @@
     }
   </style>
 <!-- END: Custom Visual Effects -->
+<script src="events-data.js"></script>
+<script>
+  (function () {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var slug = params.get('event') || 'raka-nadya';
+      window.__EVENT_SLUG__ = slug;
+      var ev = (window.getPublicEventData ? window.getPublicEventData(slug) : null);
+      if (ev && ev.countdown) window.__EVENT_COUNTDOWN__ = ev.countdown;
+    } catch (e) {}
+  })();
+</script>
 </head>
 <body class="bg-stone-900 text-stone-800 font-sans antialiased selection:bg-brand-gold/30 selection:text-brand-darkteal locked-scroll">
 <!-- BEGIN: Luxury Full-Screen 'Buka Undangan' Envelope Entrance Overlay -->
@@ -794,7 +806,7 @@
   </script>
 <script data-purpose="countdown-timer">
     // Real-time countdown timer targeting October 24, 2026 08:00:00 WITA (UTC+8)
-    const targetWeddingDate = new Date("2026-10-24T08:00:00+08:00").getTime();
+    const targetWeddingDate = new Date((window.__EVENT_COUNTDOWN__ || "2026-10-24T08:00:00+08:00")).getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
@@ -968,4 +980,29 @@
     })();
   </script>
 <!-- END: Interactive Logic Scripts -->
+<script src="events-data.js"></script>
+<script>
+  (function applyEventData() {
+    try {
+      var slug = window.__EVENT_SLUG__ || 'raka-nadya';
+      var ev = window.getPublicEventData ? window.getPublicEventData(slug) : null;
+      if (!ev) return;
+      // Title
+      if (ev.title) document.title = ev.title + ' | Undangan Pernikahan Digital';
+      // Hero couple name
+      var coupleSpan = document.querySelector('span.font-script-grand');
+      if (coupleSpan && ev.couple) coupleSpan.textContent = ev.couple;
+      // Hero date/location line: first p after couple? update text if available
+      var dateP = coupleSpan && coupleSpan.parentElement && coupleSpan.parentElement.nextElementSibling;
+      if (dateP && ev.dateText) dateP.textContent = ev.dateText + (ev.location ? ' • ' + ev.location : '');
+      // Guest name from ?to=
+      var params = new URLSearchParams(window.location.search);
+      var toParam = params.get('to');
+      if (toParam) {
+        var guestEls = document.querySelectorAll('[data-guest-name]');
+        guestEls.forEach(function (el) { el.textContent = decodeURIComponent(toParam.replace(/\+/g, ' ')); });
+      }
+    } catch (e) { console.warn('applyEventData', e); }
+  })();
+</script>
 </body></html>

@@ -721,6 +721,34 @@
   /* =============================================================
      14. PUBLIKASI
      ============================================================= */
+  function savePublicEventData() {
+    try {
+      var slug = state.slug || 'raka-nadya';
+      var payload = {
+        slug: slug,
+        title: (($('#eventNameInput') || {}).value) || '',
+        couple: (($('#coupleNamesInput') || {}).value) || '',
+        date: state.eventDate || (($('#eventDateInput') || {}).value) || '',
+        dateText: formatEventDate(state.eventDate || (($('#eventDateInput') || {}).value) || ''),
+        venue: (($('#venueNameInput') || {}).value) || '',
+        
+        heroImage: state.cover || 'assets/couple.jpg'
+      };
+      localStorage.setItem('undigital-event-' + slug, JSON.stringify(payload));
+    } catch (e) { /* ignore */ }
+  }
+  function loadPublicEventData() {
+    try {
+      var slug = state.slug || 'raka-nadya';
+      var raw = localStorage.getItem('undigital-event-' + slug);
+      if (!raw) return;
+      var d = JSON.parse(raw);
+      if (d.title) { var en = $('#eventNameInput'); if (en) en.value = d.title; }
+      if (d.couple) { var cn = $('#coupleNamesInput'); if (cn) cn.value = d.couple; }
+      if (d.date) { state.eventDate = d.date; var di = $('#eventDateInput'); if (di) di.value = d.date; }
+      if (d.venue) { var vn = $('#venueNameInput'); if (vn) vn.value = d.venue; }
+    } catch (e) { /* ignore */ }
+  }
   const publishBtn = $('#publishBtn');
   if (publishBtn) {
     publishBtn.addEventListener('click', () => {
@@ -730,6 +758,7 @@
       setTimeout(() => {
         publishBtn.disabled = false;
         publishBtn.innerHTML = original;
+        savePublicEventData();
         toast('Undangan berhasil dipublikasikan. Tautan: ' + baseUrl(), 'success');
         try {
           localStorage.setItem('undigital-studio-publish', JSON.stringify({ slug: state.slug, at: Date.now() }));
@@ -741,6 +770,8 @@
   /* =============================================================
      15. INIT
      ============================================================= */
+  loadPublicEventData();
+
   refreshPreview();
   updateGuestPreview();
   switchTab(1);
